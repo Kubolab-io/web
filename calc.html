@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kubo Talent</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+</head>
+
+<body class="homepage1-body">
+
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+   </div>
+ <!--===== PROGRESS ENDS=======-->
+
+
+<!--=====HEADER START=======-->
+<header>
+    <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+        <div class="container headerfix">
+            <div class="row align-items-center row-bg3">
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="vl-logo">
+                        <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="vl-main-menu text-center">
+                        <nav class="vl-mobile-menu-active">
+                            <ul>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="vl-hero-btn d-none d-lg-block text-end">
+                            <span class="vl-btn-wrap text-end">
+                              <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" rel="noopener noreferrer" class="vl-btn1">Get Started Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </span>
+                    </div>
+                    <div class="vl-header-action-item d-block d-lg-none">
+                        <button type="button" class="vl-offcanvas-toggle">
+                          <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+   <!--=====HEADER END =======-->
+  
+    <!--===== MOBILE HEADER STARTS =======-->
+     <div class="vl-offcanvas">
+      <div class="vl-offcanvas-wrapper">
+          <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+              <div class="vl-offcanvas-logo">
+                  <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+              </div>
+              <div class="vl-offcanvas-close">
+                 <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+          </div>
+  
+          <div class="vl-offcanvas-menu d-lg-none mb-40">
+              <nav></nav>
+          </div>
+  
+          <div class="space20"></div>
+          <div class="vl-offcanvas-info">
+              <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
+              <div class="space20"></div>
+              <span><a href="#"><i class="fa-regular fa-envelope"></i> hola@kubolab.io</a></span>
+              <span><a href="#"><i class="fa-solid fa-location-dot"></i> Florida,US</a></span>
+          </div>
+          <div class="space20"></div>
+          <div class="vl-offcanvas-social">
+              <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+              <div class="space20"></div>
+  
+              <a href="https://www.linkedin.com/company/kubo-labs"><i class="fab fa-linkedin-in"></i></a>
+              <a  href="https://www.instagram.com/kubolab.io/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+           </div>
+  
+      </div>
+  </div>
+  <div class="vl-offcanvas-overlay"></div>
+  <!--===== MOBILE HEADER STARTS =======-->
+  <div class="hero1-section-area" style="background-image: url(assets/img/all-images/bg/hero-bg1.png);">  
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero1-header heading1">
+                    <!--===== CALCULATOR SECTION =====-->
+                    <div class="calculator">
+                        <h1>Talent Cost Calculator</h1>
+                        <!-- Botones de selección con margen -->
+                        <div id="button" style="margin-bottom: 50px;">
+                            <button type="button" onclick="showPage('base')" style="margin-right: 20px;">Base</button>
+                            <button type="button" onclick="showPage('additional')" style="margin-right: 20px;">Additional Benefits</button>
+                            <button type="button" onclick="showPage('no-chosen')">No Cost Benefits</button>
+                        </div>
+                   
+
+                        <!-- Sección Base -->
+                        <div id="base">
+                            <label for="role">Select Role</label>
+                            <select id="role">
+                                <option value="8000">Data Analyst</option>
+                                <option value="7000">Virtual Assistant</option>
+                                <option value="10000">Data Scientist</option>
+                                <option value="9000">Marketing Analyst</option>
+                                <option value="12000">Software Developer</option>
+                            </select>
+
+                            <label for="country">Select Country</label>
+                            <select id="country">
+                                <option value="1">Colombia</option>
+                                <option value="1.09">Ecuador</option>
+                                <option value="1.25">Mexico</option>
+                            </select>
+
+                            <label for="experience">Years of Experience</label>
+                            <select id="experience">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+
+                            <label for="pcRental">PC Rental</label>
+                            <select id="pcRental">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+                            <label for="holidayWork">Work on Holidays</label>
+                            <select id="holidayWork">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+
+                        </div>
+
+                        <!-- Sección Additional Benefits -->
+                        <div id="additional" style="display:none;">
+                            <label for="bonus">Performance Bonus</label>
+                            <select id="bonus">
+                                <option value="0">No Bonus</option>
+                                <option value="1">Quarterly</option>
+                                <option value="2">Semi-Annually</option>
+                                <option value="3">Annually</option>
+                            </select>
+
+                            <label for="bonusPercent">Bonus as % of Salary</label>
+                            <select id="bonusPercent">
+                                <option value="0">0%</option>
+                                <option value="5">5%</option>
+                                <option value="10">10%</option>
+                                <option value="15">15%</option>
+                                <option value="20">20%</option>
+                                <option value="25">25%</option>
+                                <option value="30">30%</option>
+                                <option value="35">35%</option>
+                                <option value="40">40%</option>
+                                <option value="45">45%</option>
+                                <option value="50">50%</option>
+                                <option value="55">55%</option>
+                                <option value="60">60%</option>
+                                <option value="65">65%</option>
+                                <option value="70">70%</option>
+                                <option value="75">75%</option>
+                                <option value="80">80%</option>
+                                <option value="85">85%</option>
+                                <option value="90">90%</option>
+                                <option value="95">95%</option>
+                                <option value="100">100%</option>
+                            </select>
+
+                            
+                            <label for="PrivateHealth">Private Health Insurance</label>
+                            <select id="PrivateHealth">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+                        </div>
+
+                        <!-- Sección No cost Benefits -->
+                        <div id="no-chosen" style="display:none;">
+                            <label for="extraVacationDays">Extra Vacation Days</label>
+                            <input type="number" id="extraVacationDays" min="0" value="0">
+
+
+                            <label for="birthdayLeave">Birthday Leave</label>
+                            <select id="birthdayLeave">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+      
+                            <label for="earlyFridays">Early Fridays</label>
+                            <select id="earlyFridays">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+
+                        </div>
+
+                        <button onclick="calculateCost()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!--===== CALCULATOR SECTION END =====-->
+
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <div class="hero-images-area">
+                    <div class="summary" id="summary">
+                        <h1>Summary</h1>
+
+                        <!-- Sección de Costos -->
+                        <div id="costs">
+                            <h3>Monthly costs</h3>
+                            <div id="salaryCost" class="result-item"></div>
+                            <div id="adminCost" class="result-item"></div> <!-- Administrative Cost -->
+                            <div id="bonusCost" class="result-item"></div>
+                            <div id="PrivateHealthCost" class="result-item"></div>
+                            <div id="pcRentalCost" class="result-item"></div>
+                            <div id="holidayBonus" class="result-item"></div>
+                        </div>
+
+                        <!-- Línea divisoria -->
+                        <hr>
+
+                        <!-- Sección de Beneficios sin Costo -->
+                        <div id="benefits-no-cost">
+                            <h3>Benefits without Cost</h3>
+                            <div id="extraBenefits" class="result-item"></div>
+                        </div>
+
+                        <!-- Línea divisoria -->
+                        <hr>
+
+                        <!-- Total -->
+                        <div id="totalCostSection">
+                            <h3>Total</h3>
+                            <div id="totalCost" class="result-item"></div>
+                            <div id="totalMonthlyCost" class="result-item"></div> <!-- Total Monthly Cost -->
+                        </div>
+
+                        <script>
+                        function showPage(page) {
+                            document.getElementById('base').style.display = 'none';
+                            document.getElementById('additional').style.display = 'none';
+                            document.getElementById('no-chosen').style.display = 'none';
+                            document.getElementById(page).style.display = 'block';
+                        }
+
+                        function calculateCost() {
+                            const roleCost = parseFloat(document.getElementById('role').value);
+                            const countryMultiplier = parseFloat(document.getElementById('country').value);
+                            const yearsExperience = parseInt(document.getElementById('experience').value);
+                            const bonusTimes = parseInt(document.getElementById('bonus').value);
+                            const bonusPercent = parseFloat(document.getElementById('bonusPercent').value) / 100;
+                            const pcRental =  parseFloat(document.getElementById('pcRental').value);
+                            const PrivateHealth =  parseFloat(document.getElementById('PrivateHealth').value);
+                            const holidayWork = parseFloat(document.getElementById('holidayWork').value);
+                            let holidayBonus = 0;
+
+                            if (holidayWork) {
+                                const country = document.getElementById('country').value;
+                                if (country == "1") {
+                                    holidayBonus = 130; // Colombia
+                                } else if (country == "1.09") {
+                                    holidayBonus = 150; // Ecuador
+                                } else if (country == "1.25") {
+                                    holidayBonus = 155; // Mexico
+                                }
+                            }
+                            const pcRentalC = 75;
+                            const PrivateHealthC = 120;
+                            const experienceMultiplier = 1 + (0.2 * yearsExperience);
+                            const baseAnnualSalary = roleCost * countryMultiplier * experienceMultiplier;
+                            const adminCost = baseAnnualSalary * 0.55; // 55% of the base salary
+                            const bonusCost = roleCost/12 * bonusPercent * bonusTimes;
+                            const totalCost = baseAnnualSalary + bonusCost + (pcRentalC * 12 * pcRental) + (holidayBonus * 12) + adminCost + (PrivateHealthC * 12 * PrivateHealth);
+
+                            // Mostrar costos en la sección de costos (mensual)
+                            document.getElementById('salaryCost').innerHTML = `<strong>Base Salary :</strong> $${(baseAnnualSalary / 12).toFixed(2)}`;
+                            document.getElementById('adminCost').innerHTML = `<strong>Social Contributions :</strong> $${(adminCost / 12).toFixed(2)}`;
+                            document.getElementById('bonusCost').innerHTML = `<strong>Bonus Cost :</strong> $${(bonusCost / 12).toFixed(2)}`;
+                            document.getElementById('pcRentalCost').innerHTML = pcRental > 0 ? `<strong>PC Rental :</strong> $75` : '';
+                            document.getElementById('PrivateHealthCost').innerHTML = PrivateHealth > 0 ? `<strong>Private Health Insurance :</strong> $120` : '';
+                            document.getElementById('holidayBonus').innerHTML = holidayBonus > 0 ? `<strong>Holiday Work Bonus :</strong> $${holidayBonus.toFixed(2)}` : '';
+
+                            // Mostrar beneficios sin costo
+                            let extraBenefitsText = "";
+                            const extraVacationDays = document.getElementById('extraVacationDays').value;
+                            const birthdayLeave = parseFloat(document.getElementById('birthdayLeave').value);
+                            const earlyFridays = parseFloat(document.getElementById('earlyFridays').value);
+
+                            if (extraVacationDays > 0) {
+                                extraBenefitsText += `<strong>Extra Vacation Days:</strong> ${extraVacationDays} days<br>`;
+                            }
+
+                            if (birthdayLeave) {
+                                extraBenefitsText += `<strong>Birthday Leave:</strong> Yes<br>`;
+                            }
+
+                            if (earlyFridays) {
+                                extraBenefitsText += `<strong>Early Fridays (2pm):</strong> Yes<br>`;
+                            }
+
+                            if (extraBenefitsText) {
+                                document.getElementById('extraBenefits').innerHTML = extraBenefitsText;
+                            } else {
+                                document.getElementById('extraBenefits').innerHTML = "None";
+                            }
+
+                            // Mostrar el Total Anual
+                            document.getElementById('totalCost').innerHTML = `<strong>Total Annual Cost:</strong> $${(totalCost).toFixed(2)}`;
+
+                            // Mostrar el Total Mensual
+                            const totalMonthlyCost = totalCost / 12;
+                            document.getElementById('totalMonthlyCost').innerHTML = `<strong>Total Monthly Cost:</strong> $${totalMonthlyCost.toFixed(2)}`;
+
+                         // Ahorro vs. salario en EE. UU.
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--===== HERO AREA ENDS =====-->
+  
+
+   
+</body>
+</html>
