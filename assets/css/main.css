@@ -13542,4 +13542,138 @@ Location:
   transition: width 0.4s ease;
 }
 
+/*============= Calculator ===============*//*# sourceMappingURL=main.css.map */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sp1 {
+  padding: 60px 0;
+}
+
+
+.calculator {
+  margin-top: 20px;
+  background: #F2F4FF;
+  border-radius: 16px;
+  padding: 28px;
+  flex: 0 0 48%; /* Asegura que ocupe un 48% del ancho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculator label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.calculator select,
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.calculator button {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px; /* Añade espacio entre los botones */
+  color: #2E0797;
+  background-color: #2E0797;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 24px; 
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.4s;
+  position: relative;
+  display: inline-block;
+}
+
+.calculator button:hover {
+  background: var(--Main-Color, linear-gradient(90deg, #726EFC 0%, #2E0797 100%));
+}
+
+.summary {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 28px;
+  flex: 0 0 48%; /* Asegura que ocupe un 48% del ancho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.result-item {
+  margin-bottom: 10px;
+}
+
+.result-item strong {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.container.sp1 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+.summary h1,
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--ztc-text-text-10);
+}
+
+.result-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ztc-text-text-10);
+}
+
+.result-item strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button {
+  background: var(--ztc-bg-bg-10);
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+
 /*============= CASE STUDY CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
