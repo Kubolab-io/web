@@ -132,11 +132,46 @@
                         <div id="base">
                             <label for="role">Select Role</label>
                             <select id="role">
-                                <option value="8000">Data Analyst</option>
-                                <option value="7000">Virtual Assistant</option>
-                                <option value="10000">Data Scientist</option>
-                                <option value="9000">Marketing Analyst</option>
-                                <option value="12000">Software Developer</option>
+                                <option value="10200">Finance - Financial Analyst</option>
+                                <option value="10200">Finance - Accountant</option>
+                                <option value="12200">Finance - Investment Banker</option>
+                                <option value="16000">Finance - Risk Manager</option>
+                                <option value="11200">Finance - Credit Analyst</option>
+                                <option value="10200">Finance - Treasury Analyst</option>
+                                <option value="12200">Finance - Financial Controller</option>
+                                <option value="14200">Finance - Actuary</option>
+                                <option value="12200">Finance - Corporate Finance Associate</option>
+                                
+                                <option value="10200">Sales - Sales Representative</option>
+                                <option value="10200">Sales - Account Executive</option>
+                                <option value="12200">Sales - Business Development Manager</option>
+                                <option value="12200">Sales - Key Account Manager</option>
+                                <option value="10200">Sales - Sales Operations Analyst</option>
+                                <option value="16000">Sales - Regional Sales Manager</option>
+                                <option value="16000">Sales - Customer Success Manager</option>
+                                
+                                <option value="10200">Data - Data Analyst</option>
+                                <option value="13200">Data - Data Scientist</option>
+                                <option value="14200">Data - Data Engineer</option>
+                                <option value="14200">Data - Machine Learning Engineer</option>
+                                <option value="10200">Data - Business Intelligence Analyst</option>
+                                <option value="14200">Data - Big Data Engineer</option>
+                                <option value="12200">Data - Database Administrator</option>
+                                <option value="12200">Data - Statistician</option>
+                                <option value="14200">Data - ETL Developer</option>
+                                <option value="16000">Data - Analytics Manager</option>
+                                
+                                <option value="12200">Marketing - Marketing Manager</option>
+                                <option value="10200">Marketing - Content Strategist</option>
+                                <option value="10200">Marketing - SEO Specialist</option>
+                                <option value="12200">Marketing - Social Media Manager</option>
+                                <option value="10200">Marketing - Digital Marketing Analyst</option>
+                                <option value="12200">Marketing - Brand Manager</option>
+                                <option value="12200">Marketing - Growth Marketing Manager</option>
+                                <option value="12200">Marketing - Product Marketing Manager</option>
+                                <option value="10200">Marketing - Email Marketing Specialist</option>
+                                <option value="10200">Marketing - PPC Specialist (Pay-Per-Click Specialist)</option>
+                                
                             </select>
 
                             <label for="country">Select Country</label>
@@ -149,21 +184,13 @@
                             <label for="experience">Years of Experience</label>
                             <select id="experience">
                                 <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
+                                <option value="1">1 - 2</option>
+                                <option value="2">3 - 4</option>
+                                <option value="3">5 - 6</option>
+                                <option value="4">7 - 8</option>
+                                <option value="5">9 - 10</option>
+                                <option value="6">11 - 12</option>
+                                <option value="7">+12</option>
                             </select>
 
                             <label for="pcRental">PC Rental</label>
@@ -230,7 +257,6 @@
                             <label for="extraVacationDays">Extra Vacation Days</label>
                             <input type="number" id="extraVacationDays" min="0" value="0">
 
-
                             <label for="birthdayLeave">Birthday Leave</label>
                             <select id="birthdayLeave">
                                 <option value="0">No</option>
@@ -263,6 +289,7 @@
                             <h3>Monthly costs</h3>
                             <div id="salaryCost" class="result-item"></div>
                             <div id="adminCost" class="result-item"></div> <!-- Administrative Cost -->
+                            <div id="kubofee" class="result-item"></div> <!-- Administrative Cost -->
                             <div id="bonusCost" class="result-item"></div>
                             <div id="PrivateHealthCost" class="result-item"></div>
                             <div id="pcRentalCost" class="result-item"></div>
@@ -321,13 +348,15 @@
                             const PrivateHealthC = 120;
                             const experienceMultiplier = 1 + (0.2 * yearsExperience);
                             const baseAnnualSalary = roleCost * countryMultiplier * experienceMultiplier;
-                            const adminCost = baseAnnualSalary * 0.55; // 55% of the base salary
+                            const adminCost = baseAnnualSalary * 0.52; // 52% of the base salary
                             const bonusCost = roleCost/12 * bonusPercent * bonusTimes;
-                            const totalCost = baseAnnualSalary + bonusCost + (pcRentalC * 12 * pcRental) + (holidayBonus * 12) + adminCost + (PrivateHealthC * 12 * PrivateHealth);
+                            const kubofee = 475
+                            const totalCost = baseAnnualSalary + kubofee*12 + bonusCost + (pcRentalC * 12 * pcRental) + (holidayBonus * 12) + adminCost + (PrivateHealthC * 12 * PrivateHealth);
 
                             // Mostrar costos en la sección de costos (mensual)
                             document.getElementById('salaryCost').innerHTML = `<strong>Base Salary :</strong> $${(baseAnnualSalary / 12).toFixed(2)}`;
                             document.getElementById('adminCost').innerHTML = `<strong>Social Contributions :</strong> $${(adminCost / 12).toFixed(2)}`;
+                            document.getElementById('kubofee').innerHTML = `<strong>Administrative Fees :</strong> $${(kubofee).toFixed(2)}`;                          
                             document.getElementById('bonusCost').innerHTML = `<strong>Bonus Cost :</strong> $${(bonusCost / 12).toFixed(2)}`;
                             document.getElementById('pcRentalCost').innerHTML = pcRental > 0 ? `<strong>PC Rental :</strong> $75` : '';
                             document.getElementById('PrivateHealthCost').innerHTML = PrivateHealth > 0 ? `<strong>Private Health Insurance :</strong> $120` : '';
