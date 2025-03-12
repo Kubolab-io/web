@@ -195,9 +195,7 @@
                   <div class="shape-1">
                     <img src="assets/imgs/gallery/img-s-11.png" data-speed="0.8" alt="app image">
                   </div>
-                  <div class="shape-2">
-                    <img src="assets/imgs/gallery/img-s-12.webp" alt="app image">
-                  </div>
+
 
                 </div>
                 <div class="section-content">
@@ -262,19 +260,16 @@
                   method="POST"
                 >
                     <div class="input-field">
-                      <input type="text" placeholder="Type your name">
+                      <input type="text" name="name" placeholder="Type your name" required="true">
                     </div>
                     <div class="input-field">
-                      <input type="email" placeholder="Type Email">
+                      <input type="email" name="email" placeholder="Type Email" required="true">
                     </div>
                     <div class="input-field">
-                      <input type="text" placeholder="Enter Phone">
+                      <input type="text" name="Subject" placeholder="Type Subject" required="true">
                     </div>
                     <div class="input-field">
-                      <input type="text" placeholder="Type Subject">
-                    </div>
-                    <div class="input-field">
-                      <textarea id="message" placeholder="Type your message..."></textarea>
+                      <textarea id="message" name="message" placeholder="Type your message..." required="true"></textarea>
                     </div>
                     <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
                         data-text="Send now">Send now</span></button>

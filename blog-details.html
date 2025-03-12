@@ -332,27 +332,24 @@
                         <div class="text-wrapper">
                         </div>
                         <div class="comment-form-wrapper">
-                          <form
+                          <form   
                           action="https://formspree.io/f/xkgjnknq"
                           method="POST"
                         >
                             <div class="input-field">
-                              <input type="text" placeholder="Type your name">
+                              <input type="text" name="name" placeholder="Type your name" required="true">
                             </div>
                             <div class="input-field">
-                              <input type="email" placeholder="Type Email">
+                              <input type="email" name="email" placeholder="Type Email" required="true">
                             </div>
                             <div class="input-field">
-                              <input type="text" placeholder="Enter Phone">
+                              <input type="text" name="Subject" placeholder="Type Subject" required="true">
                             </div>
                             <div class="input-field">
-                              <input type="text" placeholder="Type Subject">
-                            </div>
-                            <div class="input-field">
-                              <textarea id="message" placeholder="Write your comment..."></textarea>
+                              <textarea id="message" name="message" placeholder="Type your message..." required="true"></textarea>
                             </div>
                             <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                                data-text="Submit">Submit</span></button>
+                                data-text="Send now">Send now</span></button>
                           </form>
                         </div>
                       </div>
