@@ -3253,7 +3253,7 @@
 }
 
 body {
-  font-family: var(--font_primary);
+  font-family: var(--font_geist);
   line-height: 1;
 }
 
@@ -3444,6 +3444,16 @@ h6 {
   src: url("../fonts/PPFragment/PPFragment-TextRegular.otf");
   font-weight: 400;
 }
+@font-face {
+  font-family: geist;
+  src: url("../fonts/Geist/static/Geist-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: geist;
+  src: url("../fonts/Geist/static/Geist-SemiBold.ttf");
+  font-weight: 600;
+}
 :root {
   --font_colasta: "colasta";
   --font_instrument: "Instrument Sans", sans-serif;
@@ -3452,6 +3462,7 @@ h6 {
   --font_pt-serif: "PT Serif", serif;
   --font_plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
   --font_PPFragment: "PPFragment";
+  --font_geist: "geist", sans-serif;
 }
 
 .font-heading-colasta-bold h1,
@@ -3543,6 +3554,16 @@ h6 {
   font-family: var(--font_PPFragment);
   font-weight: 400;
   line-height: 1.08;
+}
+.font-heading-geist-semibold h1,
+.font-heading-geist-semibold h2,
+.font-heading-geist-semibold h3,
+.font-heading-geist-semibold h4,
+.font-heading-geist-semibold h5,
+.font-heading-geist-semibold h6 {
+  font-family: var(--font_geist);
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 /*----------------------------------------*/
@@ -8966,4 +8987,201 @@ FEATURES STYLES 3
   .user-area-inner {
     padding-top: 42px;
   }
-}/*# sourceMappingURL=master-online.css.map */
+}
+
+/* ============================================ */
+/* CUSTOM CASE STUDIES SECTION STYLES */
+/* Esta sección de estilos corresponde a la sección de casos de estudio */
+/* ============================================ */
+.case-studies-area {
+  background-color: #fff;
+}
+
+.case-studies-inner {
+  max-width: 100%;
+}
+
+.case-studies-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.case-study-card {
+  background-color: #F8F8F8;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.case-image-wrapper {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background-color: #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.case-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.case-study-card:hover .case-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.case-text-content {
+  padding: 70px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.case-card-title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.case-card-description {
+  font-size: 17px;
+  color: var(--secondary);
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.case-card-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.metric-item {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #E74C3C;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1199px) {
+  .case-text-content {
+    padding: 50px 45px;
+  }
+  
+  .case-card-title {
+    font-size: 34px;
+  }
+  
+  .case-card-description {
+    font-size: 16px;
+  }
+  
+  .case-image-wrapper {
+    height: 380px;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .case-studies-wrapper {
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .case-text-content {
+    padding: 40px 35px;
+  }
+  
+  .case-card-title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  
+  .case-card-description {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  
+  .case-image-wrapper {
+    height: 350px;
+    padding: 20px;
+  }
+  
+  .case-card-metrics {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .case-studies-wrapper {
+    margin-top: 30px;
+    gap: 24px;
+  }
+  
+  .case-study-card {
+    border-radius: 16px;
+  }
+  
+  .case-text-content {
+    padding: 35px 30px;
+  }
+  
+  .case-card-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .case-card-description {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .case-card-metrics {
+    gap: 10px;
+  }
+  
+  .metric-item {
+    font-size: 14px;
+  }
+  
+  .case-image-wrapper {
+    height: 280px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .case-text-content {
+    padding: 28px 24px;
+  }
+  
+  .case-card-title {
+    font-size: 22px;
+  }
+  
+  .case-image-wrapper {
+    height: 240px;
+    padding: 15px;
+  }
+}
+/* ============================================ */
+/* END CUSTOM CASE STUDIES SECTION STYLES */
+/* ============================================ *//*# sourceMappingURL=master-online.css.map */
