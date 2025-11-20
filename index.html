@@ -5,16 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Transformamos tu idea en una app lista para conquistar el mercado. Trabajamos junto a empresarios y emprendedores para transformar ideas en negocios reales.">
+  <meta name="description" content="Agencia de Growth Marketing que impulsa marcas líderes. Estrategias probadas de marketing digital, performance branding y crecimiento acelerado.">
 
-  <title>Kubo Lab - Transformamos Ideas en Apps</title>
+  <title>Kubo Lab - Agencia de Growth Marketing</title>
 
   <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.png">
-
-
-
-
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
 
   <!-- All CSS files -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -23,22 +19,79 @@
   <link rel="stylesheet" href="assets/css/progressbar.css">
   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/css/master-online-meeting.css">
-
+  <link rel="stylesheet" href="assets/css/master-ai-image-generator.css">
+  
+  <style>
+    /* Override button color to match software page blue */
+    :root {
+      --theme: #6366f1 !important;
+    }
+    
+    .wc-btn-primary {
+      background-color: #6366f1 !important;
+      border-color: rgba(0,0,0,0) !important;
+    }
+    
+    .wc-btn-primary:hover {
+      background-color: #4f46e5 !important;
+    }
+    
+    .wc-btn-primary.bordered {
+      border-color: #41494d !important;
+      background-color: transparent !important;
+    }
+    
+    .wc-btn-primary.bordered:hover {
+      background-color: #6366f1 !important;
+      border-color: #6366f1 !important;
+    }
+    
+    /* Fix stats section for mobile */
+    .gallery-area .gallery-wrapper {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 40px !important;
+      text-align: center !important;
+      flex-wrap: wrap !important;
+    }
+    
+    .stat-item {
+      flex: 0 1 auto;
+      min-width: 200px;
+    }
+    
+    @media (max-width: 767px) {
+      .gallery-area .gallery-wrapper {
+        flex-direction: column !important;
+        gap: 30px !important;
+        padding: 0 20px;
+      }
+      
+      .stat-item {
+        width: 100%;
+        min-width: auto;
+      }
+      
+      .stat-item h3 {
+        font-size: 50px !important;
+      }
+      
+      .stat-item p {
+        font-size: 16px !important;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .gallery-area .gallery-wrapper {
+        gap: 50px !important;
+      }
+    }
+  </style>
 
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16902494256"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16902494256');
-</script>
-
-<body class="font-heading-geist-semibold">
+<body class="font-heading-plus-jakarta-sans-medium">
 
   <!-- Preloader -->
   <div id="preloader">
@@ -49,12 +102,6 @@
           <span data-text="K" class="characters">K</span>
           <span data-text="U" class="characters">U</span>
           <span data-text="B" class="characters">B</span>
-          <span data-text="O" class="characters">O</span>
-          <span data-text="L" class="characters">L</span>
-          <span data-text="A" class="characters">A</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="." class="characters">.</span>
-          <span data-text="I" class="characters">I</span>
           <span data-text="O" class="characters">O</span>
         </div>
       </div>
@@ -67,7 +114,7 @@
   <div class="cursor1"></div>
   <div class="cursor2"></div>
 
-  <!-- Sroll to top -->
+  <!-- Scroll to top -->
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
@@ -83,7 +130,7 @@
     <div class="switcher__items">
       <div class="switcher__item">
         <div class="switch__title-wrap">
-          <p class="switcher__title">Soporte de Idioma</p>
+          <p class="switcher__title">Language Support</p>
         </div>
         <div class="switcher__btn lang_dir wc-col-2">
           <button class="active" data-mode="ltr">LTR</button>
@@ -92,11 +139,11 @@
       </div>
       <div class="switcher__item">
         <div class="switch__title-wrap">
-          <p class="switcher__title">Diseño</p>
+          <p class="switcher__title">Layout</p>
         </div>
         <div class="switcher__btn layout-type wc-col-2">
-          <button class="active" data-mode="full-width">Ancho Completo</button>
-          <button data-mode="box-layout">Diseño en Caja</button>
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
         </div>
       </div>
       <div class="switcher__item">
@@ -105,8 +152,8 @@
         </div>
         <div class="switcher__btn">
           <select name="cursor-style" id="cursor_style">
-            <option value="1">por defecto</option>
-            <option selected value="2">animado</option>
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
           </select>
         </div>
       </div>
@@ -114,30 +161,27 @@
   </div>
   <!-- Switcher Area End -->
 
-  <!-- offcanvas start  -->
+  <!-- offcanvas start -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
       <span id="close_offcanvas" class="close-offcanvas">
         <img src="assets/imgs/icon/close.png" alt="close">
       </span>
-      <div class="offcanvas-btn-wrapper">
-      </div>
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="software.html">Software</a></li>
         <li>
-          <li><a href="index.html">Inicio</a></li>
-
-        <li>
-
-        <li><a href="#project-intake">Contacto</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        
+            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" rel="noopener noreferrer">
+              Contacto
+            </a>
+          </li>
+                  <li><a href="blog.html">Blog</a></li>
       </ul>
     </div>
   </div>
-  <!-- offcanvas end  -->
-
+  <!-- offcanvas end -->
 
   <!-- search modal start -->
   <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -162,28 +206,36 @@
       <div class="header-area__inner">
         <div class="header__logo">
           <a href="index.html">
-            <img src="assets/imgs/logo/logo-2.png" class="normal-logo" alt="Site Logo" width="140" height="50">
-            <img src="assets/imgs/logo/logo-13.png" class="sticky-logo" alt="Site Logo" width="125" height="50">
+            <img src="assets/imgs/logo/logo-13.png" class="normal-logo" alt="Kubo Lab" width="125" height="50">
+            <img src="assets/imgs/logo/logo-13.png" class="sticky-logo" alt="Kubo Lab" width="125" height="50">
           </a>
         </div>
         <div class="header__nav pos-center">
           <nav class="main-menu">
             <ul>
               <li><a href="index.html">Inicio</a></li>
-
-              <li><a href="#project-intake">Contacto</a></li>
-
-              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="software.html">Software</a></li>
+              <li>
+                <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" rel="noopener noreferrer">
+                  Contacto
+                </a>
+              </li>
+                            <li><a href="blog.html">Blog</a></li>
             </ul>
           </nav>
         </div>
+        <div class="header-search" data-bs-toggle="modal" data-bs-target="#search-template">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <div class="header__button">
-          <a href="#project-intake" class="wc-btn wc-btn-primary btn-text-flip"> <span
-            data-text="Contacto">Contacto</span></a>
+          <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+            <span data-text="Contacto">Contacto</span>
+          </a>
         </div>
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
-            <i class="fa-solid fa-bars"></i></button>
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -193,299 +245,231 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-booking">
+      <div class="body-wrapper body-ai-image">
 
-        <!-- overlay switcher close  -->
+        <!-- overlay switcher close -->
         <div class="overlay-switcher-close"></div>
-
-
 
         <main>
 
-          <!-- hero area start  -->
-          <section class="hero-area section-spacing">
+          <!-- hero area start -->
+          <section class="hero-area">
+            <div class="hero-area-bg">
+              <img src="assets/imgs/shape/shape-s-33.webp" alt="bg image">
+            </div>
             <div class="container">
               <div class="hero-area-inner">
-                <img class="area-shape-1" src="assets/imgs/shape/shape-s-11.webp" alt="shape image">
-                <div class="area-shape-2"></div>
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h1 class="section-title has_fade_anim">Construimos para ti. Rapido.
-                        </h1>
+                      <h1 class="section-title has_fade_anim">El equipo de <span>growth</span> detrás de algunas de las marcas más <span class="shape"><img src="assets/imgs/shape/shape-s-32.webp" alt="shape image"></span> disruptivas del mercado</h1>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim" data-delay="0.30">Trabajamos junto a empresarios y emprendedores para transformar ideas en negocios y productos reales, ayudándolos a dar el siguiente paso.
-                    </p>
+                    <p class="text has_fade_anim" data-delay="0.30">Impulsamos el crecimiento de marcas ambiciosas con estrategias probadas de marketing digital y performance branding.</p>
                   </div>
-                  <div class="btn-wrapper has_fade_anim" data-delay="0.45">
-                    <a href="#project-intake" class="wc-btn wc-btn-primary btn-text-flip primary-bg"> <span
-                        data-text="Contacto">Contacto</span></a>
-                    
-                  </div>
-                  <div class="content-bottom has_fade_anim" data-delay="0.60">
-                    <div class="customer-box-wrapper">
-                      <div class="customer-box">
-          
-               
-                    </div>
-     
-                    </div>
-                  </div>
-                </div>
-                <div class="hero-thumb">
-                  <div class="shape-1">
-                    <img src="assets/imgs/shape/shape-s-10.webp" alt="shape image">
-                  </div>
-                  <div class="shape-2">
-                    <img src="assets/imgs/shape/shape-s-7.webp" alt="shape image">
-                  </div>
-                  <div class="shape-3 has_fade_anim" data-fade-offset="0" data-delay="0.75" data-on-scroll="0">
-                    <img src="assets/imgs/shape/shape-s-9.webp" alt="shape image">
-                  </div>
-                  <div class="shape-4 has_fade_anim" data-fade-offset="0">
-                    <img src="assets/imgs/gallery/img-s-8.webp" alt="shape image">
-                  </div>
-
-                  <div class="shape-5">
-                    <img class="shape-in-1" src="assets/imgs/shape/shape-s-5.webp" alt="shape image">
-                    <img class="shape-in-2" src="assets/imgs/shape/shape-s-8.webp" alt="shape image">
-                    <img src="assets/imgs/gallery/img-s-9.png" class="has_fade_anim" data-fade-offset="0" data-delay="0.30" alt="shape image">
-
-                  </div>
-                  <div class="shape-6 has_fade_anim" data-fade-offset="0" data-delay="0.60">
-                    <img class="shape-in-3" src="assets/imgs/shape/shape-s-6.webp" alt="shape image">
-                    <img src="assets/imgs/logo/logo-3.png" alt="shape image">
-                  </div>
-                  <div class="statistics-box has_fade_anim" data-fade-offset="0" data-delay="0.45">
-                    <div class="counter-box">
-                      <div class="count-number wc-counter">3x</div><img src="assets/imgs/shape/shape-s-4.png"
-                        alt="shape image">
-                    </div>
-                    <div class="text">
-                       <span>Lanzamiento <br>
-                        Más Rápido</span>. De idea a mercado en semanas, no años.
+                  <div class="action-box">
+                    <div class="btn-wrapper has_fade_anim" data-delay="0.45">
+                      <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                        <span data-text="Agenda una llamada">Agenda una llamada</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <!-- hero area end  -->
+          <!-- hero area end -->
 
-          <!-- features area start  -->
-          <section class="features-area section-spacing">
+          <!-- stats area start -->
+          <div class="gallery-area">
+            <div class="container">
+              <div class="gallery-area-inner">
+                <div class="gallery-wrapper" style="display: flex; justify-content: center; gap: 80px; text-align: center;">
+                  <div class="stat-item has_fade_anim" data-fade-offset="0">
+                    <h3 style="font-size: 60px; font-weight: 700; color: var(--primary); margin-bottom: 10px;">65%</h3>
+                    <p style="font-size: 18px; color: var(--secondary);">de clientes duplicaron<br>  sus ingresos</p>
+                  </div>
+                  <div class="stat-item has_fade_anim" data-fade-offset="0" data-delay="0.15">
+                    <h3 style="font-size: 60px; font-weight: 700; color: var(--primary); margin-bottom: 10px;">84%</h3>
+                    <p style="font-size: 18px; color: var(--secondary);">
+                        aumento promedio en el<br>  tráfico orgánico
+                      </p>
+                      
+                </div>
+                  <div class="stat-item has_fade_anim" data-fade-offset="0" data-delay="0.30">
+                    <h3 style="font-size: 60px; font-weight: 700; color: var(--primary); margin-bottom: 10px;">5.000 M COP+</h3>
+                    <p style="font-size: 18px; color: var(--secondary);">generados para<br>  nuestros clientes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stats area end -->
+
+          <!-- services area start -->
+          <section class="features-area section-spacing pb-0">
             <div class="container">
               <div class="features-area-inner">
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Convirtiendo Ideas en
-                        Negocios Escalables</h2>
+                      <h2 class="section-title has_fade_anim">Nuestros Servicios</h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Nos especializamos en construir productos digitales y desarrollar sistemas escalables que convierten ideas pequeñas en aplicaciones robustas y líderes del mercado.                    </p>
+                    <p class="text has_fade_anim">Soluciones completas de marketing digital para empresas que quieren escalar rápido y de forma sostenible.</p>
                   </div>
                 </div>
-                <div class="section-content">
-                  <div class="accordion-wrapper has_fade_anim">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Crecimiento <br>
-                            Acelerado
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Acelera el tiempo de desarrollo, reduce los errores y entrega software funcional más rápido usando metodologías ágiles y mejores prácticas de ingeniería.</div>
+                <div class="features-wrapper-box">
+                  <div class="features-wrapper">
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-21.webp" alt="Performance Branding">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Performance<br>  Branding</h3>
+                          <p class="text">Construcción de marca con enfoque en resultados medibles. Creamos identidades que convierten y escalan.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Ejecución <br>
-                            Full-Stack
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Desde el frontend hasta el backend, bases de datos y APIs, manejamos cada capa de la aplicación para que tengas un producto completo y funcional.</div>
+                    </a>
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim" data-delay="0.25">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-22.webp" alt="Social Ads">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Social Ads &<br> Paid Media</h3>
+                          <p class="text">Campañas de alto rendimiento en Facebook, Instagram, TikTok y LinkedIn que maximizan tu ROI.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Proceso de <br>
-                            Escalamiento Fluido
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Escala tu aplicación con una arquitectura sólida y modular que crece junto a tu negocio, manteniendo el rendimiento y la calidad del código.</div>
+                    </a>
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim" data-delay="0.35">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-23.webp" alt="SEO & Content">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">SEO &<br> AEO</h3>
+                          <p class="text">Posicionamiento orgánico y optimización para buscadores de IA. Dominamos Google y ChatGPT.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="feature-thumb has_fade_anim">
-                    <img src="assets/imgs/gallery/img-s-10.webp" alt="feature image">
+                    </a>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <!-- features area end  -->
-
-          <!-- ============================================ -->
-          <!-- CASE STUDIES SECTION START -->
-          <!-- Esta sección puede ser eliminada completamente sin afectar el resto del sitio -->
-          <!-- ============================================ -->
-          <section class="case-studies-area section-spacing">
-            <div class="container">
-              <div class="case-studies-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Lo que estamos construyendo...</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="case-studies-wrapper">
-                  <!-- Case Study Card 1 -->
-                  <div class="case-study-card has_fade_anim">
-                    <div class="row g-0 align-items-center">
-                      <div class="col-lg-6">
-                        <div class="case-image-wrapper">
-                          <img src="assets/imgs/webuild/PDT1.png" alt="AI Powered Electrical Business Platform">
+                <div class="features-wrapper-box" style="margin-top: 40px;">
+                  <div class="features-wrapper">
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-21.webp" alt="Paid Search">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Paid Search &<br> PPC</h3>
+                          <p class="text">Campañas de búsqueda pagada que capturan intención de compra en el momento exacto.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="case-text-content">
-                          <h3 class="case-card-title">Plataforma de Negocios Potenciada por IA</h3>
-                          <p class="case-card-description">Expansion Technologies es una empresa eléctrica con sede en Kansas que quería reemplazar hojas de cálculo y tareas manuales con una sola plataforma para automatizar su negocio.</p>
-                          <div class="case-card-metrics">
-                            <span class="metric-item">⚡ 1 Mes de idea a MVP</span>
-                          </div>
+                    </a>
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim" data-delay="0.25">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-22.webp" alt="Lifecycle Marketing">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Lifecycle<br> Marketing</h3>
+                          <p class="text">Email marketing, SMS y automatizaciones que convierten prospectos en clientes leales.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <!-- Case Study Card 2 -->
-                  <div class="case-study-card has_fade_anim" data-delay="0.25">
-                    <div class="row g-0 align-items-center">
-                      <div class="col-lg-6">
-                        <div class="case-text-content">
-                          <h3 class="case-card-title">Tribe Social</h3>
-                          <p class="case-card-description">Construimos una plataforma SaaS para ayudar a diferentes organizaciones a conectarse con sus comunidades. Tribe Social ahora sirve a más de 3000 usuarios mensuales y genera 30k+ en ARR.</p>
-                          <div class="case-card-metrics">
-                            <span class="metric-item">3k+ Usuarios Mensuales</span>
-                            <span class="metric-item">$30k ARR</span>
-                          </div>
+                    </a>
+                    <a href="contact.html">
+                      <div class="feature-box has_fade_anim" data-delay="0.35">
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-s-23.webp" alt="Content Marketing">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Content<br> Marketing</h3>
+                          <p class="text">Contenido estratégico que atrae, educa y convierte a tu audiencia ideal.</p>
+                          <span class="wc-btn wc-btn-normal">Saber más<i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="case-image-wrapper">
-                          <img src="assets/imgs/webuild/PDT2.png" alt="Tribe Social Platform">
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <!-- ============================================ -->
-          <!-- CASE STUDIES SECTION END -->
-          <!-- ============================================ -->
+          <!-- services area end -->
 
-          <!-- product area start  -->
-          <!-- 
-          <section class="product-area section-spacing pb-0">
+          <!-- process area start -->
+          <section class="power-area section-spacing pb-0">
             <div class="container">
-              <div class="product-area-inner">
-                <div class="product-thumb">
-                  <div class="shape-1">
-                    <img src="assets/imgs/gallery/img-s-11.png" data-speed="0.8" alt="app image">
-                  </div>
-                  <div class="shape-2">
-                    <img src="assets/imgs/gallery/img-s-12.webp" alt="app image">
-                  </div>
-                  <div class="shape-main">
-                    <img src="assets/imgs/shape/shape-s-12.webp" alt="gallery image">
-                  </div>
-
-                </div>
+              <div class="power-area-inner">
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Construyendo la Próxima Generación de Líderes del Mercado</h2>
+                      <h2 class="section-title has_fade_anim">Cómo<br> trabajamos</h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Nuestro equipo ha construido y escalado productos para algunas de las startups de más rápido crecimiento en el mundo, ahora traemos esa experiencia a tu negocio.</p>
+                    <p class="text has_fade_anim">Nuestro proceso está diseñado para generar resultados rápidos y sostenibles, combinando estrategia, creatividad y ejecución impecable.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          -->
-          <!-- product area end  -->
-
-          <!-- team video area start  -->
-          <!-- 
-          <section class="team-video-area section-spacing">
-            <div class="container">
-              <div class="team-video-area-inner">
-                <div class="section-content">
-                  <div class="title-wrapper">
-                    <h2 class="section-title has_fade_anim">Tu Partner de Desarrollo Integral 
-                      </h2>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Desde arquitectos de software y desarrolladores full-stack hasta especialistas en DevOps y QA, reunimos a los expertos que tu producto necesita para despegar, escalar y liderar el mercado. Un equipo completo, integrado y operando con la agilidad de una startup.
-
-                    </p>
-                  </div>
-                  <div class="reaching-list has_fade_anim">
+                  <div class="feature-list has_fade_anim">
                     <ul>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image">Experimentados en Startups de Alto Crecimiento</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image"> Dominio de las últimas tecnologías y herramientas del mercado.</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image"> Comprometidos y Altamente Adaptables</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image">Y mucho más...</li>
+                      <li>✦ Diagnóstico y Estrategia</li>
+                      <li>✦ Implementación Ágil</li>
+                      <li>✦ Optimización Continua</li>
                     </ul>
                   </div>
+                  <div class="btn-wrapper has_fade_anim">
+                    <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Empezar ahora">Empezar ahora</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="team-video-thumb">
-                  <img src="assets/imgs/gallery/img-s-13.png" alt="team image">
+                <div class="power-thumb-box">
+                  <div class="power-thumb">
+                    <div class="shape-1">
+                      <img src="assets/imgs/shape/shape-s-34.webp" alt="shape image">
+                    </div>
+                    <div class="shape-2">
+                      <img src="assets/imgs/shape/shape-s-35.webp" alt="shape image">
+                    </div>
+                    <div class="card-1" data-speed="0.8">
+                      <img src="assets/imgs/icon/icon-s-18.webp" alt="icon">
+                      <p>Estrategias probadas que impulsan crecimiento real</p>
+                      <img src="assets/imgs/icon/icon-s-19.webp" alt="icon">
+                    </div>
+                    <div class="card-2" data-speed="1.2">
+                      <img src="assets/imgs/icon/icon-s-20.webp" alt="icon">
+                      <p>Data-driven marketing para máximo ROI</p>
+                      <span class="tag">Growth</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-          -->
-          <!-- team video area end  -->
+          <!-- process area end -->
 
-          <!-- testimonial area start  
-          <section class="testimonial-area section-spacing">
+          <!-- testimonial area start -->
+          <section class="testimonial-area section-spacing pb-0">
             <div class="container">
               <div class="testimonial-area-inner">
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">What our partners say
-                        about us</h2>
+                      <h2 class="section-title has_fade_anim">Lo que dicen nuestros clientes</h2>
                     </div>
                   </div>
-                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Partnering with top startups from around the globe.</p>
-                  </div> 
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim">Empresas de rápido crecimiento confían en nosotros para escalar sus operaciones de marketing.</p>
+                  </div>
                 </div>
                 <div class="testimonial-wrapper-box">
                   <div class="testimonial-wrapper has_fade_anim">
@@ -493,676 +477,142 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-5.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Daniela Campos</h2>
-                                <span class="meta-title">Socio Seadproh LTDA</span>
-                              </div>
-                            </div>
-                            <p class="text"> We've seen remarkable improvements in our platform architecture and code optimization. Their ability to solve complex problems and implement scalable solutions has been invaluable to our team
-                              .</p>
                             <div class="ratings-list">
                               <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
                               </ul>
+                            </div>
+                            <p class="text">En 6 meses triplicamos nuestro tráfico orgánico y duplicamos las conversiones. El equipo de Kubo Lab realmente entiende de growth marketing.</p>
+                            <div class="author">
+                              <div class="avatar"><img src="assets/imgs/client/img-s-5.webp" alt="cliente"></div>
+                              <div class="">
+                                <h2 class="name">María González</h2>
+                                <span class="meta-title">Gerente Comercial, Westpoint Security SAS</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-6.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Tyler Carthcart</h2>
-                                <span class="meta-title">IT Manager</span>
-                              </div>
-                            </div>
-                            <p class="text">Kubo helped us integrate a talented IT professional, significantly improving our IT operations and efficiency. We've met project deadlines faster and streamlined processes, all while saving on local hiring costs.</p>
                             <div class="ratings-list">
                               <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
                               </ul>
+                            </div>
+                            <p class="text">Nuestro ROI en paid ads mejoró un 300% en el primer trimestre. Son expertos en optimización y saben exactamente qué palancas mover.</p>
+                            <div class="author">
+                              <div class="avatar"><img src="assets/imgs/client/img-s-6.webp" alt="cliente"></div>
+                              <div class="">
+                                <h2 class="name">Santiago Pardo</h2>
+                                <span class="meta-title">CEO, ESSELegal</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-7.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Nicolas Ramírez</h2>
-                                <span class="meta-title">Tamt Media</span>
-                              </div>
-                            </div>
-                            <p class="text">Partnering with Kubo helped us redesign our online store and launch targeted marketing campaigns. Our sales grew steadily, and we optimized our ad spend without increasing overall costs.</p>
                             <div class="ratings-list">
                               <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
+                                <li><img src="assets/imgs/icon/rating-star.webp" alt="star"></li>
                               </ul>
                             </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
+                            <p class="text">Finalmente encontramos un partner que entiende tanto de branding como de performance. La combinación perfecta para escalar.</p>
                             <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-8.png" alt="image"></div>
+                              <div class="avatar"><img src="assets/imgs/client/img-s-7.webp" alt="cliente"></div>
                               <div class="">
-                                <h2 class="name">Marcela Cobo</h2>
-                                <span class="meta-title">COO Westpoint Security </span>
+                                <h2 class="name">Camilo Mosquera</h2>
+                                <span class="meta-title">Socio, CMB Consultoría</span>
                               </div>
-                            </div>
-                            <p class="text">Working with Kubo was a turning point for our company. They restructured our entire pricing and marketing strategy, refreshed our brand image, and helped us innovate with a new business model that opened up fresh growth opportunities.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-9.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Santiago Pardo </h2>
-                                <span class="meta-title">Socio ESSE Legal</span>
-                              </div>
-                            </div>
-                            <p class="text">After 6 months working with Kubo, our lead funnel has been completely transformed. We’re attracting more qualified prospects, converting them at a higher rate, and maintaining a steady flow of opportunities that keep our sales team busy.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-5.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Daniela Campos</h2>
-                                <span class="meta-title">Socio Seadproh LTDA</span>
-                              </div>
-                            </div>
-                            <p class="text"> We've seen remarkable improvements in our platform architecture and code optimization. Their ability to solve complex problems and implement scalable solutions has been invaluable to our team
-                              .</p>
-                              <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="pagination-wrapper">
+                      <div class="pagination-wrapper d-none">
                         <div class="testimonial-pagination"></div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
             </div>
           </section>
-         testimonial area end  
-      
-  
-<section class="integration-area section-spacing pb-0">
-  <div class="container">
-    <div class="integration-area-inner">
-      <div class="section-header">
-        <div class="section-title-wrapper">
-          <div class="title-wrapper">
-            <h2 class="section-title has_fade_anim">Companies that have partnered up with us</h2>
-          </div>
-        
-        </div>
-         
-        <div class="text-wrapper">
-        </div> 
-      </div>
-      <div class="logos-wrapper-box">
-        <div class="logos-wrapper has_fade_anim">
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-1.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-2.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-5.png" alt="app icon">
-          </div>
-        
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-12.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-13.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-14.png" alt="app icon">
-          </div>
+          <!-- testimonial area end -->
 
-        </div>
-      </div>  --> 
-          <!-- video features area start  -->
-          <section class="video-features-area section-spacing pb-0">
+          <!-- cta area start -->
+          <section class="cta-area">
             <div class="container">
-              <div class="features-area-inner">
+              <div class="cta-area-inner section-spacing">
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">¿Cómo trabajamos?
-                        </h2>
-                    </div>
-                  </div>
-                  
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Desde concepto hasta líder del mercado, convertimos ideas en negocios de rápido crecimiento con nuestro framework integral de construcción, lanzamiento y escalamiento.</p>
-                  </div>
-                </div>
-                <div class="section-content">
-                  <div class="features-wrapper">
-                    <div class="feature-box has_fade_anim">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-4.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">1. Descubrimiento y Ajuste al Mercado                        </h3>
-                        <p class="text">Nos sumergimos profundamente en tu idea, mercado y audiencia para dar forma a un producto ganador y una estrategia de crecimiento.
-
-                          </p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim" data-delay="0.25">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-5.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">2. Construcción y Lanzamiento</h3>
-                        <p class="text">Nuestro equipo diseña, codifica y crea tu producto, mientras desarrolla una campaña de marketing audaz para empezar con todo.                        </p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-6.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">3. Escalamiento y Optimización                        </h3>
-                        <p class="text">Rastreamos el rendimiento, refinamos campañas y mejoramos las características del producto para impulsar un crecimiento sostenible y rápido.                        </p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim" data-delay="0.25">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-7.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">4. Asociación Continua                        </h3>
-                        <p class="text">Nos quedamos contigo después del lanzamiento, proporcionando recursos, estrategias y poder de ejecución para seguir escalando.                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="features-thumb">
-                    <img src="assets/imgs/gallery/img-s-14.png" alt="image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- features area end  -->
-
-          
-                <!-- 
-                <div class="btn-wrapper has_fade_anim">
-                  <a href="integration.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                      data-text="Explore integration">Explore integration</span></a>
-                </div>
-              </div>
-            </div>
-          </section>
-          integration area end 
-
-         pricing area start 
-          <section class="pricing-area section-spacing">
-            <div class="container">
-              <div class="pricing-area-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">No hidden charges!
-                        Choose your plan.</h2>
+                      <h2 class="section-title has_fade_anim">¿Listo para escalar tu marca?</h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Ability to understand and generate content in different to expand their reach and
-                      appeal to a wider audience.</p>
+                    <p class="text has_fade_anim">Agenda una llamada de estrategia gratuita y descubre cómo podemos ayudarte a crecer.
+                    </p>
                   </div>
-                </div>
-                <div class="wcf__toggle_switcher style-2">
-                  <div class="slide-toggle-wrapper has_fade_anim">
-                    <div class="slide-toggle-btn">
-                      <label for="view-1dfbbd6" class="before_label active">
-                        Monthly </label>
-                      <input type="checkbox" id="view-1dfbbd6">
-                      <label for="view-1dfbbd6" class="switcher"></label>
-                      <label for="view-1dfbbd6" class="after_label">
-                        Yearly </label>
-                    </div>
-                  </div>
-
-                  <div class="toggle-content">
-                    <div class="toggle-pane show">
-                      <div class="pricing-wrapper-box">
-                        <div class="pricing-wrapper">
-                          <div class="pricing-box basic has_fade_anim">
-                            <p class="title">Basic</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$09 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box standard has_fade_anim" data-delay="0.25">
-                            <p class="title">Standard</p>
-                            <p class="description">Additional user account and collaboration</p>
-                            <h3 class="price">$29 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box silver popular has_fade_anim" data-delay="0.35">
-                            <span class="tag">Popular</span>
-                            <p class="title">Silver</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$39 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box premium has_fade_anim" data-delay="0.45">
-                            <p class="title">Premium</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$49 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="toggle-pane">
-                      <div class="pricing-wrapper-box">
-                        <div class="pricing-wrapper">
-                          <div class="pricing-box basic">
-                            <p class="title">Basic</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$89 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box standard">
-                            <p class="title">Standard</p>
-                            <p class="description">Additional user account and collaboration</p>
-                            <h3 class="price">$189 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box silver popular">
-                            <span class="tag">Popular</span>
-                            <p class="title">Silver</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$589 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box premium">
-                            <p class="title">Premium</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$889 <span>/month</span></h3>
-                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="btn-wrapper has_fade_anim">
+                    <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip">
+                      <span data-text="Agenda tu llamada">Agenda tu llamada</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-        
-          <section class="user-area">
-            <div class="container">
-              <div class="user-area-inner section-spacing">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">+50 clients worldwide</h2>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Work across sub-accounts, manage permissions and allowances centrally</p>
-                  </div>
-                </div>
-                <div class="brand-logos has_fade_anim">
-                  <div class="swiper brand-active">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-4.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-5.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-6.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-3.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-2.webp" alt="logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-      -->
-
-        <section id="project-intake" class="project-intake-area section-spacing">
-          <div class="container">
-            <div class="project-intake-inner">
-              <div class="section-header text-center has_fade_anim">
-                <div class="section-title-wrapper">
-                  <div class="title-wrapper">
-                    <h2 class="section-title">¿Pensando en construir una app?</h2>
-                  </div>
-                </div>
-                <div class="text-wrapper">
-                  <p class="text">Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.</p>
-                </div>
-              </div>
-              <form class="project-intake-form has_fade_anim" action="https://formspree.io/f/xblqjrnk" method="post">
-                <div class="form-grid">
-                  <div class="input-field">
-                    <label for="project-name">Tu nombre *</label>
-                    <input type="text" id="project-name" name="name" placeholder="Escribe tu nombre" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-email">Correo *</label>
-                    <input type="email" id="project-email" name="email" placeholder="Escribe tu correo" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-phone">Teléfono *</label>
-                    <input type="tel" id="project-phone" name="phone" placeholder="Ej: +57 300 123 4567" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-timeline">Fecha de lanzamiento deseada</label>
-                    <select id="project-timeline" name="timeline">
-                      <option value="" selected>Selecciona una opción</option>
-                      <option value="inmediato">Inmediatamente</option>
-                      <option value="1-3_meses">En 1 - 3 meses</option>
-                      <option value="3-6_meses">En 3 - 6 meses</option>
-                      <option value="6+_meses">Más de 6 meses</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="input-field">
-                  <label for="project-vision">Cuéntanos sobre tu producto *</label>
-                  <textarea id="project-vision" name="vision" rows="4" placeholder="Estamos construyendo una app para..." required></textarea>
-                </div>
-                <div class="budget-options">
-                  <span class="budget-label">¿Cuál es tu presupuesto mensual de desarrollo?</span>
-                  <div class="budget-buttons">
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="10k_menos">
-                      <span>$5M COP o menos</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="10k_20k">
-                      <span>$5M - $15MCOP / mes</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="20k_30k">
-                      <span>$15K - $30K / mes</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="prioridad_velocidad">
-                      <span>Prioridad: velocidad</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="submit-wrapper">
-                  <button type="submit" class="project-intake-submit">Enviar solicitud</button>
-                  <p class="disclaimer">Al enviar aceptas que nos comuniquemos contigo para hablar de tu proyecto.</p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
+          <!-- cta area end -->
 
         </main>
 
-        <!-- footer area start  -->
-        <footer class="footer-area style-2">
+        <!-- footer area start -->
+        <footer class="footer-area style-3">
           <div class="container">
             <div class="footer-area-inner">
               <div class="footer-widget-wrapper">
                 <div class="footer-logo">
-                  <img src="assets/imgs/logo/logo-2.png" alt="site-logo">
+                  <img src="assets/imgs/logo/logo-13.png" alt="Kubo Lab" width="125" height="50">
                 </div>
                 <div class="description-text">
                   <div class="text-wrapper">
-                    <p class="text">Los mejores desarrolladores, analistas y marketers listos para construir para ti. Rápido.</p>
+                    <p class="text">El equipo de growth marketing detrás de algunas de las marcas más disruptivas del mercado.</p>
                   </div>
                 </div>
               </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Empresa</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="index.html">Acerca de</a></li>
-                  <li><a href="https://9m9efcl7chq.typeform.com/to/xuP4P8WI/" target="_blank">Carreras</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contact.html">Contáctanos</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Otros</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="terms-n-conditions.html">Términos y Condiciones</a></li>
-                  <li><a href="privacy-policy.html">Política de Privacidad</a></li>
-                </ul>
-              </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Newsletter</h2>
-                <form action="#" class="subscribe-form">
-                  <div class="input-field">
-                    <input type="email" placeholder="Ingresa tu correo">
-                    <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
-                  </div>
-                  <div class="policy-field">
-                    <input type="checkbox" id="policy" name="policy" value="Boat">
-                    <label for="policy"> Estoy de acuerdo con la <span>política de privacidad</span></label>
-                  </div>
-                </form>
-              </div>
             </div>
             <div class="copyright-area-inner">
-              <ul class="social-links">
-                <li><a href="https://www.instagram.com/kubolab.io/"  target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/kubo-labs"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              <ul class="footer-nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
               </ul>
-              <div class="copyright-text">
-                <p class="text">© 2022 Kubolab.io</p>
-              </div>
+              <ul class="social-links">
+                <li><a href="https://www.instagram.com/kubolab.io/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/kubo-labs" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </footer>
-        <!-- footer area end  -->
+        <!-- footer area end -->
 
       </div>
     </div>
   </div>
-  <!-- login form  -->
+
+  <!-- login form -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -1174,8 +624,7 @@
                   alt="icon image"></button>
             </div>
             <div class="title-wrapper">
-              <h2 class="title"><span>Bienvenido <br>
-                  de vuelta a</span> Kubo </h2>
+              <h2 class="title"><span>Bienvenido a</span> Kubo Lab</h2>
             </div>
             <div class="icon">
               <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
@@ -1194,12 +643,12 @@
                   <a href="#" class="forget-password">¿Olvidaste tu contraseña?</a>
                 </div>
                 <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                    data-text="Iniciar Sesión">Iniciar Sesión</span></button>
+                    data-text="Ingresar">Ingresar</span></button>
               </form>
             </div>
             <div class="note">
-              <p>¿No tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#signupform">¡Créala aquí!</a></span></p>
+              <p>¿No tienes cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
+                    data-bs-toggle="modal" data-bs-target="#signupform">Créala aquí!</a></span></p>
             </div>
           </div>
         </div>
@@ -1207,7 +656,7 @@
     </div>
   </div>
 
-  <!-- signup form  -->
+  <!-- signup form -->
   <div class="modal fade" id="signupform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -1219,8 +668,7 @@
                   alt="icon image"></button>
             </div>
             <div class="title-wrapper">
-              <h2 class="title"><span>Comienza Tu <br>
-                  Viaje</span> con nosotros.</h2>
+              <h2 class="title"><span>Comienza tu viaje</span> con nosotros</h2>
             </div>
             <div class="icon">
               <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
@@ -1228,31 +676,31 @@
             <div class="form-wrapper">
               <form action="#" class="user-form">
                 <div class="input-field">
-                  <input type="text" placeholder="Escribe tu nombre">
+                  <input type="text" placeholder="Tu nombre">
                 </div>
                 <div class="input-field">
                   <input type="text" placeholder="Nombre de usuario">
                 </div>
                 <div class="input-field">
-                  <input type="email" placeholder="Escribe tu correo">
+                  <input type="email" placeholder="Tu correo">
                 </div>
                 <div class="input-field">
-                  <input type="password" placeholder="Escribe tu contraseña">
+                  <input type="password" placeholder="Tu contraseña">
                 </div>
                 <div class="input-field">
                   <input type="password" placeholder="Confirma tu contraseña">
                 </div>
                 <div class="policy-field">
                   <input type="checkbox" id="d-policy" name="d-policy" value="Boat">
-                  <label for="d-policy">Estoy de acuerdo con los <span><a href="#">Términos de Servicio</a></span> de Kubo.</label>
+                  <label for="d-policy">Acepto los <span><a href="#">Términos de Servicio.</a></span></label>
                 </div>
                 <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
                     data-text="Registrarse">Registrarse</span></button>
               </form>
             </div>
             <div class="note">
-              <p>¿Ya tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡Inicia sesión aquí!</a></span></p>
+              <p>¿Ya tienes cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ingresa aquí!</a></span></p>
             </div>
             <h3 class="alternative-title"><span>O</span></h3>
             <ul class="social-links">
@@ -1265,7 +713,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- All JS files -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -1300,10 +747,8 @@
         pagination: {
           el: '.testimonial-pagination',
           type: 'bullets',
-          clickable: true,
         },
         breakpoints: {
-          // when window width is >= px
           576: {
             slidesPerView: 1,
           },
@@ -1322,59 +767,9 @@
         }
       });
     }
-
-
-    const toggle_switcher = function ($scope) {
-      const checked = $("input", $scope);
-      const toggle_pane = $(".toggle-pane", $scope);
-      const toggle_label = $(".before_label, .after_label", $scope);
-
-      checked.change(function () {
-        toggle_pane.toggleClass('show');
-        toggle_label.toggleClass('active');
-      })
-    }
-
-
-    // corporate_brand_slider_active
-    if ('.brand-active') {
-      var brand_slider_active = new Swiper(".brand-active", {
-        slidesPerView: 5,
-        loop: true,
-        autoplay: true,
-        spaceBetween: 60,
-        speed: 3000,
-        autoplay: {
-          delay: .1,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          // when window width is >= 320px
-          375: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 40
-          },
-          // when window width is >= 1366px
-          1366: {
-            slidesPerView: 5,
-          },
-        }
-      });
-    }
   </script>
-
-
 
 </body>
 
 </html>
+
