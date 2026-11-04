@@ -1,1376 +1,540 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contrata freelancers expertos para tu próximo proyecto. Desarrolladores, diseñadores y especialistas verificados listos para trabajar.">
-
-  <title>Kubo - Contrata Freelancers Expertos</title>
-
-  <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.png">
-
-
-
-
-
-  <!-- All CSS files -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/progressbar.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-  <link rel="stylesheet" href="assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/css/master-online-meeting.css">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kubo — SEO, AIO y pauta para negocios en Colombia</title>
+  <meta name="title" content="Kubo — SEO, AIO y pauta para negocios en Colombia" />
+  <meta
+    name="description"
+    content="Kubo opera tu marketing: SEO + AIO por $500.000/mes, Paid Ads por $1.000.000/mes, o ambos por $1.300.000. Tú apruebas. Nosotros ejecutamos."
+  />
+  <meta name="keywords" content="seo colombia, aio, pauta digital, google ads, meta ads, marketing colombia, kubo" />
+  <meta name="author" content="Kubo" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.kubolab.io/" />
+  <meta property="og:title" content="Kubo — SEO, AIO y pauta para negocios en Colombia" />
+  <meta property="og:description" content="SEO + AIO $500.000/mes · Paid Ads $1.000.000/mes · Ambos $1.300.000. Tú apruebas. Kubo ejecuta." />
+  <meta property="og:image" content="https://www.kubolab.io/assets/imgs/logo/logo-2.png" />
+  <meta property="og:site_name" content="Kubo" />
+  <meta property="og:locale" content="es_CO" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kubo — SEO, AIO y pauta para negocios en Colombia" />
+  <meta name="twitter:description" content="SEO + AIO $500.000/mes · Paid Ads $1.000.000/mes · Ambos $1.300.000. Tú apruebas. Kubo ejecuta." />
+  <link rel="canonical" href="https://www.kubolab.io/" />
+  <link rel="icon" type="image/png" href="assets/imgs/logo/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/imgs/logo/favicon.png" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand-50: #eff6ff;
+      --brand-100: #dbeafe;
+      --brand-200: #bfdbfe;
+      --brand-300: #93c5fd;
+      --brand-600: #2563eb;
+      --brand-700: #1d4ed8;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-900: #0f172a;
+      --emerald: #059669;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      color: var(--slate-900);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--slate-100);
+      background: rgba(255,255,255,.9);
+      backdrop-filter: blur(12px);
+    }
+    .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .logo { height: 36px; width: auto; }
+    .nav-links, .nav-cta { display: none; align-items: center; gap: .25rem; }
+    .nav-links a {
+      border-radius: .5rem;
+      padding: .5rem .75rem;
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--slate-600);
+      text-decoration: none;
+    }
+    .nav-links a:hover { background: var(--slate-50); color: var(--slate-900); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      border-radius: .75rem;
+      font-weight: 500;
+      text-decoration: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .btn-sm { padding: .375rem .75rem; font-size: .875rem; }
+    .btn-md { padding: .625rem 1rem; font-size: .875rem; }
+    .btn-lg { padding: .75rem 1.5rem; font-size: 1rem; }
+    .btn-primary { background: var(--brand-600); color: #fff; }
+    .btn-primary:hover { background: var(--brand-700); }
+    .btn-secondary {
+      background: #fff;
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+    }
+    .btn-secondary:hover { border-color: var(--brand-200); background: var(--brand-50); }
+    .menu-btn {
+      border: 0;
+      background: transparent;
+      padding: .5rem;
+      border-radius: .5rem;
+      color: var(--slate-600);
+    }
+    .mobile {
+      display: none;
+      flex-direction: column;
+      gap: .25rem;
+      border-top: 1px solid var(--slate-100);
+      padding: 1rem 1.5rem;
+    }
+    .mobile a {
+      padding: .5rem .75rem;
+      text-decoration: none;
+      color: var(--slate-700);
+      font-size: .875rem;
+      font-weight: 500;
+      border-radius: .5rem;
+    }
+    .hero {
+      border-bottom: 1px solid var(--slate-100);
+      background: linear-gradient(to bottom, rgba(239,246,255,.8), #fff);
+      padding: 4rem 0 6rem;
+      text-align: center;
+    }
+    .eyebrow {
+      font-size: .875rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--brand-600);
+    }
+    h1 {
+      margin: 1rem 0 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -.025em;
+    }
+    .lead {
+      margin: 1.5rem auto 0;
+      max-width: 42rem;
+      font-size: 1.125rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+    .actions { margin-top: 2.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+    .muted { margin-top: 1.5rem; font-size: .875rem; color: var(--slate-500); }
+    .stats {
+      display: grid;
+      gap: 1.5rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--slate-100);
+    }
+    .stats p { margin: 0; }
+    .stats strong { display: block; font-size: .875rem; }
+    .stats span { display: block; margin-top: .25rem; font-size: .875rem; color: var(--slate-500); }
+    section { padding: 4rem 0; }
+    h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 1.875rem); text-align: center; }
+    .sub { margin: .75rem auto 0; max-width: 36rem; text-align: center; color: var(--slate-500); }
+    .cards { margin-top: 3rem; display: grid; gap: 1.5rem; }
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--slate-100);
+      border-radius: 1rem;
+      background: #fff;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgb(0 0 0 / .06);
+    }
+    .card.featured {
+      border-color: var(--brand-300);
+      box-shadow: 0 0 0 2px var(--brand-100);
+    }
+    .tag {
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--brand-600);
+    }
+    .badge {
+      position: absolute;
+      top: -.75rem;
+      left: 1.5rem;
+      background: var(--brand-600);
+      color: #fff;
+      border-radius: 999px;
+      padding: .125rem .75rem;
+      font-size: .75rem;
+      font-weight: 500;
+    }
+    .card h3 { margin: .75rem 0 0; font-size: 1.25rem; }
+    .blurb { margin: .5rem 0 0; font-size: .875rem; color: var(--slate-500); }
+    .price { margin-top: 1.5rem; }
+    .was { margin: 0; font-size: .875rem; color: var(--slate-400); text-decoration: line-through; }
+    .amount { margin: 0; font-size: 1.875rem; font-weight: 700; }
+    .period { margin: 0; font-size: .875rem; color: var(--slate-500); }
+    .card ul { margin: 1.5rem 0 0; padding: 0; list-style: none; flex: 1; }
+    .card li { display: flex; gap: .5rem; font-size: .875rem; color: var(--slate-600); margin-top: .5rem; }
+    .check { color: var(--emerald); }
+    .card .btn { margin-top: 2rem; width: 100%; }
+    .note { margin-top: 1.5rem; text-align: center; font-size: .75rem; color: var(--slate-400); }
+    .alt { background: rgba(248,250,252,.8); border-top: 1px solid var(--slate-100); border-bottom: 1px solid var(--slate-100); }
+    .steps { margin-top: 3rem; display: grid; gap: 2rem; }
+    .step {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgb(0 0 0 / .06);
+    }
+    .n {
+      display: flex;
+      width: 2.5rem;
+      height: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: .75rem;
+      background: var(--brand-100);
+      color: var(--brand-700);
+      font-size: .875rem;
+      font-weight: 700;
+    }
+    .step h3 { margin: 1rem 0 0; font-size: 1rem; }
+    .step p { margin: .5rem 0 0; font-size: .875rem; color: var(--slate-500); }
+    .two { margin-top: 3rem; display: grid; gap: 2rem; }
+    .panel { border: 1px solid var(--slate-100); border-radius: 1rem; padding: 1.5rem; }
+    .panel h3 { margin: 0; font-size: 1.125rem; }
+    .panel p { margin: .5rem 0 0; font-size: .875rem; color: var(--slate-500); }
+    .panel ul { margin: 1rem 0 0; padding: 0; list-style: none; font-size: .875rem; color: var(--slate-600); }
+    .panel li { margin-top: .5rem; }
+    .faqs { margin-top: 2.5rem; max-width: 48rem; margin-left: auto; margin-right: auto; }
+    details {
+      border: 1px solid var(--slate-100);
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+    summary { cursor: pointer; font-weight: 500; }
+    details p { margin: .75rem 0 0; font-size: .875rem; color: var(--slate-500); }
+    .cta { text-align: center; }
+    footer {
+      border-top: 1px solid var(--slate-100);
+      background: rgba(248,250,252,.5);
+      padding: 3rem 0;
+    }
+    .foot { display: grid; gap: 2.5rem; }
+    .foot p, .foot a, address { font-size: .875rem; color: var(--slate-500); }
+    .foot h4 { margin: 0; font-size: .95rem; color: var(--slate-900); }
+    .foot ul { margin: .75rem 0 0; padding: 0; list-style: none; }
+    .foot li { margin-top: .5rem; }
+    .foot a { text-decoration: none; }
+    .foot a:hover { color: var(--brand-600); }
+    address { font-style: normal; line-height: 1.6; margin-top: 1rem; }
+    .copy {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(226,232,240,.8);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .5rem;
+      font-size: .75rem;
+      color: var(--slate-400);
+    }
+    @media (min-width: 768px) {
+      .nav-links, .nav-cta { display: flex; }
+      .menu-btn { display: none; }
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .stats div { text-align: left; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .steps, .two { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(3, 1fr); }
+      .foot { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; }
+    }
+  </style>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16902494256"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16902494256');
-</script>
-
-<body class="font-heading-geist-semibold">
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="container" class="container-preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text="K" class="characters">K</span>
-          <span data-text="U" class="characters">U</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="O" class="characters">O</span>
-          <span data-text="L" class="characters">L</span>
-          <span data-text="A" class="characters">A</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="." class="characters">.</span>
-          <span data-text="I" class="characters">I</span>
-          <span data-text="O" class="characters">O</span>
-        </div>
-      </div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-  </div>
-
-  <!-- Cursor Animation -->
-  <div class="cursor1"></div>
-  <div class="cursor2"></div>
-
-  <!-- Sroll to top -->
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-    </svg>
-  </div>
-
-  <!-- Switcher Area Start -->
-  <div class="switcher__area">
-    <div class="switcher__icon">
-      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="switcher__items">
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Soporte de Idioma</p>
-        </div>
-        <div class="switcher__btn lang_dir wc-col-2">
-          <button class="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Diseño</p>
-        </div>
-        <div class="switcher__btn layout-type wc-col-2">
-          <button class="active" data-mode="full-width">Ancho Completo</button>
-          <button data-mode="box-layout">Diseño en Caja</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Cursor</p>
-        </div>
-        <div class="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">por defecto</option>
-            <option selected value="2">animado</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Switcher Area End -->
-
-  <!-- offcanvas start  -->
-  <div class="offcanvas-area">
-    <div class="offcanvas-area-meta-wrapper">
-      <span id="close_offcanvas" class="close-offcanvas">
-        <img src="assets/imgs/icon/close.png" alt="close">
-      </span>
-      <div class="offcanvas-btn-wrapper">
-      </div>
-    </div>
-    <div class="offcanvas-area-menu-wrapper">
-      <ul id="accordion" class="accordion">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="https://app.kubolab.io" target="_blank">Inicia Sesión</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- offcanvas end  -->
-
-
-  <!-- search modal start -->
-  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="search-template" aria-hidden="true">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form action="#" class="form-search">
-            <input type="text" placeholder="Buscar">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- search modal end -->
-
-  <!-- Header area start -->
-  <header class="header-area style-1 pos-abs zi-9">
-    <div class="container">
-      <div class="header-area__inner">
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="assets/imgs/logo/logo-2.png" class="normal-logo" alt="Site Logo" width="140" height="50">
-            <img src="assets/imgs/logo/logo-13.png" class="sticky-logo" alt="Site Logo" width="125" height="50">
-          </a>
-        </div>
-        <div class="header__nav pos-center">
-          <nav class="main-menu">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="https://app.kubolab.io" target="_blank">Buscar Freelancers</a></li>
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__button">
-          <a href="https://app.kubolab.io" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-            data-text="Inicia Sesión">Inicia Sesión</span></a>
-        </div>
-        <div class="header__navicon d-xl-none">
-          <button onclick="showCanvas3()" class="open-offcanvas">
-            <i class="fa-solid fa-bars"></i></button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- Header area end -->
-
-  <div class="has-smooth" id="has_smooth"></div>
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <div class="body-wrapper body-booking">
-
-        <!-- overlay switcher close  -->
-        <div class="overlay-switcher-close"></div>
-
-
-
-        <main>
-
-          <!-- hero area start  -->
-          <section class="hero-area section-spacing">
-            <div class="container">
-              <div class="hero-area-inner">
-                <img class="area-shape-1" src="assets/imgs/shape/shape-s-11.webp" alt="shape image">
-                <div class="area-shape-2"></div>
-                <div class="section-content">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h1 class="section-title has_fade_anim">Contrata Freelancers Expertos. Hoy.
-                        </h1>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim" data-delay="0.30">Conecta con profesionales verificados listos para llevar tu proyecto al siguiente nivel. Desarrolladores, diseñadores, y más.
-                    </p>
-                  </div>
-                  <div class="btn-wrapper has_fade_anim" data-delay="0.45">
-                    <a href="https://app.kubolab.io" target="_blank" class="wc-btn wc-btn-primary btn-text-flip primary-bg"> <span
-                        data-text="Comenzar Ahora">Comenzar Ahora</span></a>
-
-                  </div>
-                  <div class="content-bottom has_fade_anim" data-delay="0.60">
-                    <div class="customer-box-wrapper">
-                      <div class="customer-box">
-
-
-                    </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="hero-thumb">
-                  <div class="shape-1">
-                    <img src="assets/imgs/shape/shape-s-10.webp" alt="shape image">
-                  </div>
-                  <div class="shape-2">
-                    <img src="assets/imgs/shape/shape-s-7.webp" alt="shape image">
-                  </div>
-                  <div class="shape-3 has_fade_anim" data-fade-offset="0" data-delay="0.75" data-on-scroll="0">
-                    <img src="assets/imgs/shape/shape-s-9.webp" alt="shape image">
-                  </div>
-                  <div class="shape-4 has_fade_anim" data-fade-offset="0">
-                    <img src="assets/imgs/gallery/img-s-8.png" alt="shape image">
-                  </div>
-
-                  <div class="shape-5">
-                    <img class="shape-in-1" src="assets/imgs/shape/shape-s-5.webp" alt="shape image">
-                    <img class="shape-in-2" src="assets/imgs/shape/shape-s-8.webp" alt="shape image">
-                    <img src="assets/imgs/gallery/img-s-9.png" class="has_fade_anim" data-fade-offset="0" data-delay="0.30" alt="shape image">
-
-                  </div>
-                  <div class="shape-6 has_fade_anim" data-fade-offset="0" data-delay="0.60">
-                    <img class="shape-in-3" src="assets/imgs/shape/shape-s-6.webp" alt="shape image">
-                    <img src="assets/imgs/logo/logo-3.png" alt="shape image">
-                  </div>
-                  <div class="statistics-box has_fade_anim" data-fade-offset="0" data-delay="0.45">
-                    <div class="counter-box">
-                      <div class="count-number wc-counter">50+</div><img src="assets/imgs/shape/shape-s-4.png"
-                        alt="shape image">
-                    </div>
-                    <div class="text">
-                       <span>Profesionales <br>
-                        Verificados</span>. Listos para empezar hoy.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- hero area end  -->
-
-          <!-- features area start  -->
-          <section class="features-area section-spacing">
-            <div class="container">
-              <div class="features-area-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">La Forma Más Fácil de
-                        Contratar Freelancers</h2>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Más de 50 profesionales verificados listos para tu próximo proyecto. Desde desarrollo web hasta edición de videos, encuentra al experto perfecto y contáctalo.</p>
-                  </div>
-                </div>
-                <div class="section-content">
-                  <div class="accordion-wrapper has_fade_anim">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Profesionales <br>
-                            Verificados
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Todos los freelancers pasan por un proceso de verificación riguroso antes de unirse. Revisa perfiles, portafolios y reseñas reales de clientes.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Contrata <br>
-                            en Horas
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Entra, elige al freelancer que quieres y escríbele. Revisa perfiles, portafolios y reseñas, y contrata en menos de 24 horas.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Pagos <br>
-                            Protegidos
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Tu dinero está seguro hasta que apruebes el trabajo completado. Sistema de pagos con protección integrada para tu tranquilidad.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feature-thumb has_fade_anim">
-                    <img src="assets/imgs/gallery/img-s-10.webp" alt="feature image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- features area end  -->
-
-          <!-- ============================================ -->
-          <!-- CASE STUDIES SECTION START -->
-          <!-- Esta sección puede ser eliminada completamente sin afectar el resto del sitio -->
-          <!-- ============================================ -->
-          <section class="case-studies-area section-spacing">
-            <div class="container">
-              <div class="case-studies-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Proyectos Exitosos en Kubo</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="case-studies-wrapper">
-                  <!-- Case Study Card 1 -->
-                  <div class="case-study-card has_fade_anim">
-                    <div class="row g-0 align-items-center">
-                      <div class="col-lg-6">
-                        <div class="case-image-wrapper">
-                          <img src="assets/imgs/webuild/PDT1.png" alt="AI Powered Electrical Business Platform">
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="case-text-content">
-                          <h3 class="case-card-title">Plataforma de Automatización Empresarial</h3>
-                          <p class="case-card-description">Una empresa eléctrica encontró el equipo perfecto de desarrolladores en Kubo. Tres freelancers full-stack construyeron su plataforma de automatización de principio a fin.</p>
-                          <div class="case-card-metrics">
-                            <span class="metric-item">⚡ Contratados en 48 horas</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Case Study Card 2 -->
-                  <div class="case-study-card has_fade_anim" data-delay="0.25">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="case-text-content">
-                                <h3 class="case-card-title">Sistema de Gestión de Nómina</h3>
-                                <p class="case-card-description">
-                                    Una startup de RRHH necesitaba especialistas en fintech y desarrollo backend. A través de Kubo encontraron el equipo completo: diseñadores UX, desarrolladores y expertos en integración bancaria.
-                                </p>
-                                <div class="case-card-metrics">
-                                  <span class="metric-item">4 Freelancers Contratados</span>
-                                  <span class="metric-item">Proyecto 100% Completado</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                        <div class="case-image-wrapper">
-                          <img src="assets/imgs/webuild/PDT2.png" alt="WP Platform">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- ============================================ -->
-          <!-- CASE STUDIES SECTION END -->
-          <!-- ============================================ -->
-
-          <!-- product area start  -->
-          <!--
-          <section class="product-area section-spacing pb-0">
-            <div class="container">
-              <div class="product-area-inner">
-                <div class="product-thumb">
-                  <div class="shape-1">
-                    <img src="assets/imgs/gallery/img-s-11.png" data-speed="0.8" alt="app image">
-                  </div>
-                  <div class="shape-2">
-                    <img src="assets/imgs/gallery/img-s-12.webp" alt="app image">
-                  </div>
-                  <div class="shape-main">
-                    <img src="assets/imgs/shape/shape-s-12.webp" alt="gallery image">
-                  </div>
-
-                </div>
-                <div class="section-content">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Construyendo la Próxima Generación de Líderes del Mercado</h2>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Nuestro equipo ha construido y escalado productos para algunas de las startups de más rápido crecimiento en el mundo, ahora traemos esa experiencia a tu negocio.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          -->
-          <!-- product area end  -->
-
-          <!-- team video area start  -->
-          <!--
-          <section class="team-video-area section-spacing">
-            <div class="container">
-              <div class="team-video-area-inner">
-                <div class="section-content">
-                  <div class="title-wrapper">
-                    <h2 class="section-title has_fade_anim">Tu Partner de Desarrollo Integral
-                      </h2>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Desde arquitectos de software y desarrolladores full-stack hasta especialistas en DevOps y QA, reunimos a los expertos que tu producto necesita para despegar, escalar y liderar el mercado. Un equipo completo, integrado y operando con la agilidad de una startup.
-
-                    </p>
-                  </div>
-                  <div class="reaching-list has_fade_anim">
-                    <ul>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image">Experimentados en Startups de Alto Crecimiento</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image"> Dominio de las últimas tecnologías y herramientas del mercado.</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image"> Comprometidos y Altamente Adaptables</li>
-                      <li><img src="assets/imgs/icon/check-2.webp" alt="icon image">Y mucho más...</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="team-video-thumb">
-                  <img src="assets/imgs/gallery/img-s-13.png" alt="team image">
-                </div>
-              </div>
-            </div>
-          </section>
-          -->
-          <!-- team video area end  -->
-
-          <!-- testimonial area start
-          <section class="testimonial-area section-spacing">
-            <div class="container">
-              <div class="testimonial-area-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">What our partners say
-                        about us</h2>
-                    </div>
-                  </div>
-                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Partnering with top startups from around the globe.</p>
-                  </div>
-                </div>
-                <div class="testimonial-wrapper-box">
-                  <div class="testimonial-wrapper has_fade_anim">
-                    <div class="swiper testimonial-slider">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-5.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Daniela Campos</h2>
-                                <span class="meta-title">Socio Seadproh LTDA</span>
-                              </div>
-                            </div>
-                            <p class="text"> We've seen remarkable improvements in our platform architecture and code optimization. Their ability to solve complex problems and implement scalable solutions has been invaluable to our team
-                              .</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-6.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Tyler Carthcart</h2>
-                                <span class="meta-title">IT Manager</span>
-                              </div>
-                            </div>
-                            <p class="text">Kubo helped us integrate a talented IT professional, significantly improving our IT operations and efficiency. We've met project deadlines faster and streamlined processes, all while saving on local hiring costs.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-7.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Nicolas Ramírez</h2>
-                                <span class="meta-title">Tamt Media</span>
-                              </div>
-                            </div>
-                            <p class="text">Partnering with Kubo helped us redesign our online store and launch targeted marketing campaigns. Our sales grew steadily, and we optimized our ad spend without increasing overall costs.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-8.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Marcela Cobo</h2>
-                                <span class="meta-title">COO Westpoint Security </span>
-                              </div>
-                            </div>
-                            <p class="text">Working with Kubo was a turning point for our company. They restructured our entire pricing and marketing strategy, refreshed our brand image, and helped us innovate with a new business model that opened up fresh growth opportunities.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-9.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Santiago Pardo </h2>
-                                <span class="meta-title">Socio ESSE Legal</span>
-                              </div>
-                            </div>
-                            <p class="text">After 6 months working with Kubo, our lead funnel has been completely transformed. We’re attracting more qualified prospects, converting them at a higher rate, and maintaining a steady flow of opportunities that keep our sales team busy.</p>
-                            <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-box">
-                            <div class="author">
-                              <div class="avatar"><img src="assets/imgs/client/img-s-5.png" alt="image"></div>
-                              <div class="">
-                                <h2 class="name">Daniela Campos</h2>
-                                <span class="meta-title">Socio Seadproh LTDA</span>
-                              </div>
-                            </div>
-                            <p class="text"> We've seen remarkable improvements in our platform architecture and code optimization. Their ability to solve complex problems and implement scalable solutions has been invaluable to our team
-                              .</p>
-                              <div class="ratings-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                                <li><img src="assets/imgs/icon/rating-star.webp" alt="icon image"></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="pagination-wrapper">
-                        <div class="testimonial-pagination"></div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-         testimonial area end
-
-
-<section class="integration-area section-spacing pb-0">
-  <div class="container">
-    <div class="integration-area-inner">
-      <div class="section-header">
-        <div class="section-title-wrapper">
-          <div class="title-wrapper">
-            <h2 class="section-title has_fade_anim">Companies that have partnered up with us</h2>
-          </div>
-
-        </div>
-
-        <div class="text-wrapper">
-        </div>
-      </div>
-      <div class="logos-wrapper-box">
-        <div class="logos-wrapper has_fade_anim">
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-1.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-2.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-5.png" alt="app icon">
-          </div>
-
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-12.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-13.png" alt="app icon">
-          </div>
-          <div class="logo-box">
-            <img src="assets/imgs/icon/icon-app-14.png" alt="app icon">
-          </div>
-
-        </div>
-      </div>  -->
-          <!-- video features area start  -->
-          <section class="video-features-area section-spacing pb-0">
-            <div class="container">
-              <div class="features-area-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">¿Cómo funciona Kubo?
-                        </h2>
-                    </div>
-                  </div>
-
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Contratar freelancers nunca fue tan fácil. Entra, elige al profesional que quieres y empieza a trabajar en horas, no semanas.</p>
-                  </div>
-                </div>
-                <div class="section-content">
-                  <div class="features-wrapper">
-                    <div class="feature-box has_fade_anim">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-4.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">1. Encuentra al Freelancer                        </h3>
-                        <p class="text">Entra a Kubo y explora perfiles, servicios y portafolios. Filtra por tipo de trabajo y elige a quien mejor encaje. Toma minutos, no días.
-                          </p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim" data-delay="0.25">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-5.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">2. Contáctalo</h3>
-                        <p class="text">Escríbele directo al freelancer que quieres. Cuéntale lo que necesitas, revisa su portafolio y resuelve dudas por chat.</p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-6.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">3. Contrátalo                        </h3>
-                        <p class="text">Acuerda el alcance y empieza a trabajar de inmediato con el profesional que elegiste. Sin publicar un proyecto ni esperar propuestas.</p>
-                      </div>
-                    </div>
-                    <div class="feature-box has_fade_anim" data-delay="0.25">
-                      <div class="thumb">
-                        <img src="assets/imgs/icon/icon-s-7.webp" alt="feature icon">
-                      </div>
-                      <div class="content">
-                        <h3 class="title">4. Paga Seguro                        </h3>
-                        <p class="text">Tu pago está protegido. Solo se libera cuando apruebes el trabajo completado. Rápido, seguro y sin complicaciones.                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="features-thumb">
-                    <img src="assets/imgs/gallery/img-s-14.png" alt="image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- features area end  -->
-
-
-                <!--
-                <div class="btn-wrapper has_fade_anim">
-                  <a href="integration.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                      data-text="Explore integration">Explore integration</span></a>
-                </div>
-              </div>
-            </div>
-          </section>
-          integration area end
-
-         pricing area start
-          <section class="pricing-area section-spacing">
-            <div class="container">
-              <div class="pricing-area-inner">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">No hidden charges!
-                        Choose your plan.</h2>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Ability to understand and generate content in different to expand their reach and
-                      appeal to a wider audience.</p>
-                  </div>
-                </div>
-                <div class="wcf__toggle_switcher style-2">
-                  <div class="slide-toggle-wrapper has_fade_anim">
-                    <div class="slide-toggle-btn">
-                      <label for="view-1dfbbd6" class="before_label active">
-                        Monthly </label>
-                      <input type="checkbox" id="view-1dfbbd6">
-                      <label for="view-1dfbbd6" class="switcher"></label>
-                      <label for="view-1dfbbd6" class="after_label">
-                        Yearly </label>
-                    </div>
-                  </div>
-
-                  <div class="toggle-content">
-                    <div class="toggle-pane show">
-                      <div class="pricing-wrapper-box">
-                        <div class="pricing-wrapper">
-                          <div class="pricing-box basic has_fade_anim">
-                            <p class="title">Basic</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$09 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box standard has_fade_anim" data-delay="0.25">
-                            <p class="title">Standard</p>
-                            <p class="description">Additional user account and collaboration</p>
-                            <h3 class="price">$29 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box silver popular has_fade_anim" data-delay="0.35">
-                            <span class="tag">Popular</span>
-                            <p class="title">Silver</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$39 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box premium has_fade_anim" data-delay="0.45">
-                            <p class="title">Premium</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$49 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="toggle-pane">
-                      <div class="pricing-wrapper-box">
-                        <div class="pricing-wrapper">
-                          <div class="pricing-box basic">
-                            <p class="title">Basic</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$89 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box standard">
-                            <p class="title">Standard</p>
-                            <p class="description">Additional user account and collaboration</p>
-                            <h3 class="price">$189 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp"
-                                    alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box silver popular">
-                            <span class="tag">Popular</span>
-                            <p class="title">Silver</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$589 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li class="disallow"><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="pricing-box premium">
-                            <p class="title">Premium</p>
-                            <p class="description">Ability to understand and generate content</p>
-                            <h3 class="price">$889 <span>/month</span></h3>
-                            <a href="https://appt.link/discovery-call-with-kubo-lab-4Do0qrTK/web-conference" target="_blank" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                data-text="Test 14 days for free">Test 14 days for free</span></a>
-                            <div class="feature-list">
-                              <ul>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Unlimited cards</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Automated management</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">SOX
-                                  compliance</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Enterprise
-                                  ERP integrations
-                                </li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Limited
-                                  tools</li>
-                                <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Local
-                                  video issuance</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="user-area">
-            <div class="container">
-              <div class="user-area-inner section-spacing">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">+50 clients worldwide</h2>
-                    </div>
-                  </div>
-                  <div class="text-wrapper">
-                    <p class="text has_fade_anim">Work across sub-accounts, manage permissions and allowances centrally</p>
-                  </div>
-                </div>
-                <div class="brand-logos has_fade_anim">
-                  <div class="swiper brand-active">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-4.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-5.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-6.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-3.webp" alt="logo">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="logo">
-                          <img src="assets/imgs/brand/img-r-2.webp" alt="logo">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-      -->
-
-        <!--
-        <section id="project-intake" class="project-intake-area section-spacing">
-          <div class="container">
-            <div class="project-intake-inner">
-              <div class="section-header text-center has_fade_anim">
-                <div class="section-title-wrapper">
-                  <div class="title-wrapper">
-                    <h2 class="section-title">¿Pensando en construir una app?</h2>
-                  </div>
-                </div>
-                <div class="text-wrapper">
-                  <p class="text">Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.</p>
-                </div>
-              </div>
-              <form class="project-intake-form has_fade_anim" action="https://formspree.io/f/xblqjrnk" method="post">
-                <div class="form-grid">
-                  <div class="input-field">
-                    <label for="project-name">Tu nombre *</label>
-                    <input type="text" id="project-name" name="name" placeholder="Escribe tu nombre" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-email">Correo *</label>
-                    <input type="email" id="project-email" name="email" placeholder="Escribe tu correo" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-phone">Teléfono *</label>
-                    <input type="tel" id="project-phone" name="phone" placeholder="Ej: +57 300 123 4567" required>
-                  </div>
-                  <div class="input-field">
-                    <label for="project-timeline">Fecha de lanzamiento deseada</label>
-                    <select id="project-timeline" name="timeline">
-                      <option value="" selected>Selecciona una opción</option>
-                      <option value="inmediato">Inmediatamente</option>
-                      <option value="1-3_meses">En 1 - 3 meses</option>
-                      <option value="3-6_meses">En 3 - 6 meses</option>
-                      <option value="6+_meses">Más de 6 meses</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="input-field">
-                  <label for="project-vision">Cuéntanos sobre tu producto *</label>
-                  <textarea id="project-vision" name="vision" rows="4" placeholder="Estamos construyendo una app para..." required></textarea>
-                </div>
-                <div class="budget-options">
-                  <span class="budget-label">¿Cuál es tu presupuesto mensual de desarrollo?</span>
-                  <div class="budget-buttons">
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="10k_menos">
-                      <span>$5M COP o menos</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="10k_20k">
-                      <span>$5M - $15M COP</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="20k_30k">
-                      <span>$15M - $30M COP</span>
-                    </label>
-                    <label class="budget-option">
-                      <input type="radio" name="budget" value="prioridad_velocidad">
-                      <span>Prioridad: velocidad</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="submit-wrapper">
-                  <button type="submit" class="project-intake-submit">Enviar solicitud</button>
-                  <p class="disclaimer">Al enviar aceptas que nos comuniquemos contigo para hablar de tu proyecto.</p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-        -->
-
-        </main>
-
-        <!-- footer area start  -->
-        <footer class="footer-area style-2">
-          <div class="container">
-            <div class="footer-area-inner">
-              <div class="footer-widget-wrapper">
-                <div class="footer-logo">
-                  <img src="assets/imgs/logo/logo-2.png" alt="site-logo">
-                </div>
-                <div class="description-text">
-                  <div class="text-wrapper">
-                    <p class="text">Conecta con freelancers expertos listos para llevar tu proyecto al siguiente nivel. Rápido, seguro y confiable.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Empresa</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="index.html">Acerca de</a></li>
-                  <li><a href="https://9m9efcl7chq.typeform.com/to/xuP4P8WI/" target="_blank">Carreras</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="https://app.kubolab.io" target="_blank">Buscar Freelancers</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Otros</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="terms-n-conditions.html">Términos y Condiciones</a></li>
-                  <li><a href="privacy-policy.html">Política de Privacidad</a></li>
-                </ul>
-              </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Newsletter</h2>
-                <form action="#" class="subscribe-form">
-                  <div class="input-field">
-                    <input type="email" placeholder="Ingresa tu correo">
-                    <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
-                  </div>
-                  <div class="policy-field">
-                    <input type="checkbox" id="policy" name="policy" value="Boat">
-                    <label for="policy"> Estoy de acuerdo con la <span>política de privacidad</span></label>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="copyright-area-inner">
-              <ul class="social-links">
-                <li><a href="https://www.instagram.com/kubolab.io/"  target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/kubo-labs"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-              </ul>
-              <div class="copyright-text">
-                <p class="text">© 2022 Kubolab.io</p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- footer area end  -->
-
-      </div>
-    </div>
-  </div>
-  <!-- login form  -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="form-box-wrapper">
-          <div class="login-form-box">
-            <div class="btn-wrapper">
-              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
-                  alt="icon image"></button>
-            </div>
-            <div class="title-wrapper">
-              <h2 class="title"><span>Bienvenido <br>
-                  de vuelta a</span> Kubo </h2>
-            </div>
-            <div class="icon">
-              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
-            </div>
-            <div class="form-wrapper">
-              <form action="#" class="user-form">
-                <div class="input-field">
-                  <input type="email" placeholder="Ingresa tu correo">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Ingresa tu contraseña">
-                </div>
-                <div class="policy-field">
-                  <input type="checkbox" id="p-policy" name="p-policy" value="Boat">
-                  <label for="policy">Recuérdame</label>
-                  <a href="#" class="forget-password">¿Olvidaste tu contraseña?</a>
-                </div>
-                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                    data-text="Iniciar Sesión">Iniciar Sesión</span></button>
-              </form>
-            </div>
-            <div class="note">
-              <p>¿No tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#signupform">¡Créala aquí!</a></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- signup form  -->
-  <div class="modal fade" id="signupform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="form-box-wrapper">
-          <div class="register-form-box">
-            <div class="btn-wrapper">
-              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
-                  alt="icon image"></button>
-            </div>
-            <div class="title-wrapper">
-              <h2 class="title"><span>Comienza Tu <br>
-                  Viaje</span> con nosotros.</h2>
-            </div>
-            <div class="icon">
-              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
-            </div>
-            <div class="form-wrapper">
-              <form action="#" class="user-form">
-                <div class="input-field">
-                  <input type="text" placeholder="Escribe tu nombre">
-                </div>
-                <div class="input-field">
-                  <input type="text" placeholder="Nombre de usuario">
-                </div>
-                <div class="input-field">
-                  <input type="email" placeholder="Escribe tu correo">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Escribe tu contraseña">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Confirma tu contraseña">
-                </div>
-                <div class="policy-field">
-                  <input type="checkbox" id="d-policy" name="d-policy" value="Boat">
-                  <label for="d-policy">Estoy de acuerdo con los <span><a href="#">Términos de Servicio</a></span> de Kubo.</label>
-                </div>
-                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                    data-text="Registrarse">Registrarse</span></button>
-              </form>
-            </div>
-            <div class="note">
-              <p>¿Ya tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡Inicia sesión aquí!</a></span></p>
-            </div>
-            <h3 class="alternative-title"><span>O</span></h3>
-            <ul class="social-links">
-              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- All JS files -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollSmoother.min.js"></script>
-  <script src="assets/js/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/jquery.meanmenu.min.js"></script>
-  <script src="assets/js/backToTop.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/error-handling.js"></script>
-  <script src="assets/js/offcanvas.js"></script>
-
+<body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16902494256"></script>
   <script>
-    // testimonial slider
-    if (('.testimonial-slider').length) {
-      var testimonial_slider = new Swiper(".testimonial-slider", {
-        loop: false,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        speed: 1800,
-        freeMode: true,
-        watchSlidesProgress: true,
-        navigation: {
-          prevEl: ".testimonial-button-prev",
-          nextEl: ".testimonial-button-next",
-        },
-        pagination: {
-          el: '.testimonial-pagination',
-          type: 'bullets',
-          clickable: true,
-        },
-        breakpoints: {
-          // when window width is >= px
-          576: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          992: {
-            slidesPerView: 2,
-          },
-          1201: {
-            slidesPerView: 3,
-          },
-          1367: {
-            slidesPerView: 3,
-          },
-        }
-      });
-    }
-
-
-    const toggle_switcher = function ($scope) {
-      const checked = $("input", $scope);
-      const toggle_pane = $(".toggle-pane", $scope);
-      const toggle_label = $(".before_label, .after_label", $scope);
-
-      checked.change(function () {
-        toggle_pane.toggleClass('show');
-        toggle_label.toggleClass('active');
-      })
-    }
-
-
-    // corporate_brand_slider_active
-    if ('.brand-active') {
-      var brand_slider_active = new Swiper(".brand-active", {
-        slidesPerView: 5,
-        loop: true,
-        autoplay: true,
-        spaceBetween: 60,
-        speed: 3000,
-        autoplay: {
-          delay: .1,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          // when window width is >= 320px
-          375: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 40
-          },
-          // when window width is >= 1366px
-          1366: {
-            slidesPerView: 5,
-          },
-        }
-      });
-    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-16902494256');
   </script>
 
+  <header>
+    <div class="wrap nav">
+      <a href="/"><img class="logo" src="assets/imgs/logo/logo-2.png" alt="Kubo" width="120" height="36" /></a>
+      <nav class="nav-links">
+        <a href="#paquetes">Paquetes</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-sm btn-primary" href="mailto:hola@kubolab.io?subject=Quiero%20un%20paquete%20Kubo">Hablar con Kubo</a>
+      </div>
+      <button class="menu-btn" type="button" aria-label="Menú" onclick="document.getElementById('mobile').style.display = document.getElementById('mobile').style.display === 'flex' ? 'none' : 'flex'">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile" class="mobile">
+      <a href="#paquetes">Paquetes</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#contacto">Contacto</a>
+      <a href="mailto:hola@kubolab.io?subject=Quiero%20un%20paquete%20Kubo">Hablar con Kubo</a>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Marketing · Colombia</p>
+      <h1>Tu departamento de marketing. Sin contratar uno.</h1>
+      <p class="lead">Kubo planea, escribe, publica y mide tu SEO, tu visibilidad en IA y tu pauta. Tú miras el reporte y apruebas. Nosotros hacemos el trabajo diario.</p>
+      <div class="actions">
+        <a class="btn btn-lg btn-primary" href="#paquetes">Ver paquetes</a>
+        <a class="btn btn-lg btn-secondary" href="mailto:hola@kubolab.io?subject=Quiero%20el%20paquete%20Kubo%20Completo%20%E2%80%94%20Kubo">Hablar con Kubo</a>
+      </div>
+      <p class="muted">Planes desde $500.000 / mes · Sin permanencia larga</p>
+    </div>
+  </section>
 
+  <div class="wrap stats">
+    <div><strong>Google + IA</strong><span>Apareces donde hoy busca tu cliente</span></div>
+    <div><strong>Pauta que rinde</strong><span>Campañas que se recortan o se escalan con data</span></div>
+    <div><strong>Un solo equipo</strong><span>Sin freelancers sueltos ni 5 herramientas</span></div>
+  </div>
+
+  <section id="paquetes">
+    <div class="wrap">
+      <h2>Dos palancas. O las dos.</h2>
+      <p class="sub">Elige orgánico, pauta, o el combo con descuento. Todos son mensuales.</p>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">Orgánico</p>
+          <h3>SEO + AIO</h3>
+          <p class="blurb">Que te encuentren en Google y en ChatGPT, Perplexity y Gemini.</p>
+          <div class="price">
+            <p class="amount">$500.000</p>
+            <p class="period">COP / mes</p>
+          </div>
+          <ul>
+            <li><span class="check">✓</span> Keywords que sí busca tu cliente</li>
+            <li><span class="check">✓</span> Artículos y páginas listas para publicar</li>
+            <li><span class="check">✓</span> Optimización AIO para motores de IA</li>
+            <li><span class="check">✓</span> On-page técnico: titles, metas, enlaces</li>
+            <li><span class="check">✓</span> Reporte mensual de posiciones y clics</li>
+          </ul>
+          <a class="btn btn-md btn-secondary" href="mailto:hola@kubolab.io?subject=Quiero%20el%20paquete%20SEO%20%2B%20AIO%20%E2%80%94%20Kubo">Quiero este paquete</a>
+        </article>
+        <article class="card">
+          <p class="tag">Pago</p>
+          <h3>Paid Ads</h3>
+          <p class="blurb">Campañas en Meta y Google que traen leads, no solo impresiones.</p>
+          <div class="price">
+            <p class="amount">$1.000.000</p>
+            <p class="period">COP / mes</p>
+          </div>
+          <ul>
+            <li><span class="check">✓</span> Estrategia y estructura de campañas</li>
+            <li><span class="check">✓</span> Creatividades y copys para testear</li>
+            <li><span class="check">✓</span> Setup y optimización semanal</li>
+            <li><span class="check">✓</span> Pixel, conversiones y audiencias</li>
+            <li><span class="check">✓</span> Reporte semanal de ROAS y costo por lead</li>
+          </ul>
+          <a class="btn btn-md btn-secondary" href="mailto:hola@kubolab.io?subject=Quiero%20el%20paquete%20Paid%20Ads%20%E2%80%94%20Kubo">Quiero este paquete</a>
+        </article>
+        <article class="card featured">
+          <span class="badge">Más elegido</span>
+          <h3>Kubo Completo</h3>
+          <p class="blurb">SEO + AIO y pauta, juntos. Ahorras $200.000 al mes.</p>
+          <div class="price">
+            <p class="was">$1.500.000</p>
+            <p class="amount">$1.300.000</p>
+            <p class="period">COP / mes</p>
+          </div>
+          <ul>
+            <li><span class="check">✓</span> Todo lo del paquete SEO + AIO</li>
+            <li><span class="check">✓</span> Todo lo del paquete Paid Ads</li>
+            <li><span class="check">✓</span> Un solo plan, un solo reporte</li>
+            <li><span class="check">✓</span> Prioridad en el calendario de Kubo</li>
+          </ul>
+          <a class="btn btn-md btn-primary" href="mailto:hola@kubolab.io?subject=Quiero%20el%20paquete%20Kubo%20Completo%20%E2%80%94%20Kubo">Quiero este paquete</a>
+        </article>
+      </div>
+      <p class="note">En Paid Ads el presupuesto que pagas a Meta o Google va aparte, en tu propia cuenta.</p>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="alt">
+    <div class="wrap">
+      <h2>Cómo trabaja Kubo</h2>
+      <p class="sub">Como una agencia, pero sin el teatro de 6 reuniones para publicar un artículo.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="n">1</span>
+          <h3>Nos pasas tu web</h3>
+          <p>En 15 minutos entendemos tu oferta, tu cliente y contra quién compites.</p>
+        </div>
+        <div class="step">
+          <span class="n">2</span>
+          <h3>Armamos el mes</h3>
+          <p>Calendario de contenidos, keywords y (si contratas ads) las primeras campañas.</p>
+        </div>
+        <div class="step">
+          <span class="n">3</span>
+          <h3>Publicamos y medimos</h3>
+          <p>Tú apruebas. Nosotros ejecutamos. Cada mes ves qué movió ventas y qué sigue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Qué cubre cada palanca</h2>
+      <div class="two">
+        <div class="panel">
+          <h3>SEO + AIO</h3>
+          <p>Investigamos qué busca tu mercado, escribimos el contenido y lo dejamos listo para Google y para los modelos de IA. Nada de blogs genéricos que nadie lee.</p>
+          <ul>
+            <li>· Investigación de keywords y de competencia</li>
+            <li>· Calendario editorial del mes</li>
+            <li>· Artículos y páginas on-page</li>
+            <li>· Estructura para que la IA te mencione</li>
+            <li>· Tracking de clics, keywords y menciones</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Paid Ads</h3>
+          <p>Montamos y afinamos campañas en Meta y Google. Cortamos lo que no convierte y escalamos lo que sí.</p>
+          <ul>
+            <li>· Auditoría de cuenta y de tracking</li>
+            <li>· Ángulos, copys y creativos para testear</li>
+            <li>· Campañas de captación y remarketing</li>
+            <li>· Optimización semanal de pujas y audiencias</li>
+            <li>· Informe de CPA, ROAS y siguientes pruebas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faqs">
+        <details open>
+          <summary>¿Qué es AIO?</summary>
+          <p>Answer / AI Optimization: estructuramos tu contenido para que ChatGPT, Perplexity, Gemini y las respuestas de IA de Google te citen, no solo para que rankees en el listado azul.</p>
+        </details>
+        <details>
+          <summary>¿El presupuesto de pauta está incluido?</summary>
+          <p>No. El paquete Paid Ads cubre estrategia, creativos, setup y optimización. El media spend (lo que pagas a Meta o Google) va aparte, directo en tu cuenta.</p>
+        </details>
+        <details>
+          <summary>¿Hay permanencia?</summary>
+          <p>Mes a mes. Recomendamos mínimo 3 meses en SEO + AIO porque el orgánico no explota en la semana 1. En ads se ven señales desde las primeras dos semanas.</p>
+        </details>
+        <details>
+          <summary>¿Trabajan con cualquier negocio?</summary>
+          <p>Sí, si tienes web o landing y un producto o servicio claro. Si aún no tienes sitio, te decimos qué necesitas antes de empezar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="cta">
+    <div class="wrap">
+      <h2>¿Empezamos el próximo mes?</h2>
+      <p class="sub">Escríbenos qué paquete quieres y el link de tu negocio. Te respondemos con el plan de los primeros 30 días.</p>
+      <div class="actions">
+        <a class="btn btn-lg btn-primary" href="mailto:hola@kubolab.io?subject=Quiero%20el%20paquete%20Kubo%20Completo%20%E2%80%94%20Kubo">Escribir a hola@kubolab.io</a>
+        <a class="btn btn-lg btn-secondary" href="#paquetes">Comparar paquetes</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <a href="/"><img class="logo" src="assets/imgs/logo/logo-2.png" alt="Kubo" width="120" height="36" /></a>
+          <p>SEO, visibilidad en IA y pauta para negocios en Colombia. Tú apruebas. Kubo ejecuta.</p>
+        </div>
+        <div>
+          <h4>Paquetes</h4>
+          <ul>
+            <li><a href="#paquetes">SEO + AIO</a></li>
+            <li><a href="#paquetes">Paid Ads</a></li>
+            <li><a href="#paquetes">Kubo Completo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal y contacto</h4>
+          <ul>
+            <li><a href="terms-n-conditions.html">Términos y condiciones</a></li>
+            <li><a href="privacy-policy.html">Política de privacidad</a></li>
+          </ul>
+          <address>
+            <strong style="color:var(--slate-700)">Oficina</strong><br />
+            Cra. 11B #99-25<br />
+            Bogotá · Oficina 10-119<br />
+            <a href="mailto:hola@kubolab.io">hola@kubolab.io</a>
+          </address>
+        </div>
+      </div>
+      <div class="copy">
+        <p>© 2026 Kubo · Colombia</p>
+        <div>
+          <a href="terms-n-conditions.html">Términos</a>
+          &nbsp;·&nbsp;
+          <a href="privacy-policy.html">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>
