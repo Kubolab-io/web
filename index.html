@@ -224,7 +224,7 @@
                   <p class="km-hero-note has_fade_anim" data-delay="0.55">Desde $500.000 COP / mes. Sin permanencia larga.</p>
                 </div>
                 <div class="hero-thumb has_fade_anim">
-                  <img class="hero-product" src="assets/imgs/gallery/kubo-marketing-meeting.jpg" alt="Reunión semanal del equipo de Marketing de Kubo — Valentina lidera la llamada">
+                  <img class="hero-product" src="assets/imgs/gallery/kubo-marketing-meeting.jpg" alt="Reunión semanal del equipo de Marketing de Kubo — Juan lidera la llamada">
                 </div>
               </div>
             </div>
@@ -263,6 +263,63 @@
                   <p class="km-tag">Flujo</p>
                   <h3>Tú apruebas</h3>
                   <p>Ves el calendario, das el ok y Kubo publica. Marketing que se siente como revisar, no como trabajar.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="casos" class="km-cases-area section-spacing">
+            <div class="container">
+              <div class="section-header">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title has_fade_anim">Lo dicen quienes ya trabajan con Kubo.</h2>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="text has_fade_anim">Westpoint Security y ESSE Legal. Resultados reales, no promesas de agencia.</p>
+                </div>
+              </div>
+              <div class="km-cases has_fade_anim">
+                <article class="km-case">
+                  <!-- Pega el ID de YouTube de Westpoint en data-youtube -->
+                  <div class="km-case-video" data-youtube="">
+                    <div class="km-case-play">
+                      <span class="km-play-icon" aria-hidden="true"></span>
+                      <span>Video de Westpoint · próximamente</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    <p>“La empresa estaba en caída. Habíamos pagado otros marketings que nos cobraban hasta cuatro veces más, y las llamadas que recibíamos eran, en su mayoría, de gente buscando trabajo. Con Kubo y con Juan Esteban el cambio fue muy grande. Ya llevamos seis años trabajando juntos.”</p>
+                  </blockquote>
+                  <div class="km-case-person">
+                    <img src="assets/imgs/client/img-s-8.png" alt="Marcela Cobo, CEO de Westpoint Security">
+                    <div>
+                      <strong>Marcela Cobo</strong>
+                      <span>CEO, Westpoint Security</span>
+                    </div>
+                    <span class="km-case-chip">6 años juntos</span>
+                  </div>
+                </article>
+                <article class="km-case">
+                  <!-- Pega el ID de YouTube de ESSE Legal en data-youtube -->
+                  <div class="km-case-video" data-youtube="">
+                    <div class="km-case-play">
+                      <span class="km-play-icon" aria-hidden="true"></span>
+                      <span>Video de ESSE Legal · próximamente</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    <p>“Dependíamos de referidos. Con Kubo dejamos de esperar a que alguien nos recomendara: hoy nos encuentran, y hemos podido escalar la operación.”</p>
+                  </blockquote>
+                  <div class="km-case-person">
+                    <img src="assets/imgs/client/img-s-9.png" alt="Santiago Pardo, CEO de ESSE Legal">
+                    <div>
+                      <strong>Santiago Pardo</strong>
+                      <span>CEO, ESSE Legal · abogados laborales</span>
+                    </div>
+                    <span class="km-case-chip">De referidos a escala</span>
+                  </div>
                 </article>
               </div>
             </div>
@@ -1218,6 +1275,12 @@
       })
     }
 
+
+    document.querySelectorAll('.km-case-video[data-youtube]').forEach(function (el) {
+      var id = (el.getAttribute('data-youtube') || '').trim();
+      if (!id) return;
+      el.innerHTML = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(id) + '?rel=0" title="Caso de éxito Kubo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    });
 
     (function () {
       var input = document.getElementById('km-url');
