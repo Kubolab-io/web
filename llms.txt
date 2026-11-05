@@ -1,0 +1,27 @@
+# Kubo
+
+> Kubo es una agencia de marketing digital de Colombia. Hacemos que los clientes de un negocio lo encuentren en Google y en ChatGPT (SEO + AIO) y manejamos sus anuncios en Facebook, Instagram y Google (Paid Ads). Hablamos en lenguaje simple, trabajamos mes a mes y entregamos reportes fáciles de entender.
+
+## Servicios y precios (COP por mes, más IVA, sin permanencia)
+
+- SEO + AIO: $500.000. Aparecer de forma orgánica en las búsquedas de los clientes, en Google y en ChatGPT, Gemini, Perplexity y otras IAs.
+- Paid Ads: $1.000.000. Anuncios en Facebook, Instagram y Google, con medición semanal. Recomendamos un presupuesto mínimo en anuncios y el cliente decide si invierte más.
+- Kubo Completo: $1.300.000. SEO + AIO y Paid Ads juntos, un solo plan y un solo reporte.
+
+## Páginas principales
+
+- [Inicio: servicios, precios y preguntas frecuentes](https://www.kubolab.io/)
+- [Sobre nosotros: los hermanos Juan Esteban y Juan David, fundadores](https://www.kubolab.io/nosotros.html)
+- [Blog](https://www.kubolab.io/blog.html)
+- [¿Cómo usar la IA para conseguir clientes?](https://www.kubolab.io/blog-ia-conseguir-clientes.html): guía para que ChatGPT, Claude y otras IAs encuentren tu negocio.
+
+## Contacto
+
+- WhatsApp: +57 314 219 2278 (https://wa.me/573142192278)
+- LinkedIn: https://www.linkedin.com/company/kub0lab/
+- Instagram: https://www.instagram.com/kubolab.io/
+- Sitio: https://www.kubolab.io/
+
+## Más detalle
+
+- [Versión extendida para IAs](https://www.kubolab.io/llms-full.txt)

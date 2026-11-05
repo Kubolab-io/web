@@ -1,0 +1,71 @@
+# Kubo
+
+> Kubo es una agencia de marketing digital de Colombia. Hacemos que los clientes de un negocio lo encuentren en Google y en ChatGPT (SEO + AIO) y manejamos sus anuncios en Facebook, Instagram y Google (Paid Ads). Hablamos en lenguaje simple, trabajamos mes a mes y entregamos reportes fáciles de entender.
+
+## Servicios y precios (COP por mes, más IVA, sin permanencia)
+
+- SEO + AIO: $500.000. Aparecer de forma orgánica en las búsquedas de los clientes, en Google y en ChatGPT, Gemini, Perplexity y otras IAs.
+- Paid Ads: $1.000.000. Anuncios en Facebook, Instagram y Google, con medición semanal. Recomendamos un presupuesto mínimo en anuncios y el cliente decide si invierte más.
+- Kubo Completo: $1.300.000. SEO + AIO y Paid Ads juntos, un solo plan y un solo reporte.
+
+## Páginas principales
+
+- [Inicio: servicios, precios y preguntas frecuentes](https://www.kubolab.io/)
+- [Sobre nosotros: los hermanos Juan Esteban y Juan David, fundadores](https://www.kubolab.io/nosotros.html)
+- [Blog](https://www.kubolab.io/blog.html)
+- [¿Cómo usar la IA para conseguir clientes?](https://www.kubolab.io/blog-ia-conseguir-clientes.html): guía para que ChatGPT, Claude y otras IAs encuentren tu negocio.
+
+## Contacto
+
+- WhatsApp: +57 314 219 2278 (https://wa.me/573142192278)
+- LinkedIn: https://www.linkedin.com/company/kub0lab/
+- Instagram: https://www.instagram.com/kubolab.io/
+- Sitio: https://www.kubolab.io/
+
+## Preguntas frecuentes
+
+### ¿Qué es Kubo y qué hace?
+
+Kubo es una agencia de marketing digital de Colombia. Hacemos que tu negocio aparezca en Google y en ChatGPT (SEO + AIO) y manejamos tus anuncios en Facebook, Instagram y Google (Paid Ads), con reportes simples para que veas qué trae clientes.
+
+### ¿Cuánto cuesta?
+
+SEO + AIO cuesta $500.000 COP al mes, Paid Ads $1.000.000 COP al mes y Kubo Completo, que junta las dos, $1.300.000 COP al mes. Todos los precios son más IVA y sin permanencia.
+
+### ¿Qué significan SEO, AIO y pauta?
+
+SEO es lograr que tu negocio aparezca en Google cuando alguien busca lo que vendes, sin pagar por cada clic. AIO es lo mismo, pero en ChatGPT, Gemini y otras inteligencias artificiales. Pauta son anuncios pagos en Facebook, Instagram y Google que le muestran tu negocio a las personas indicadas.
+
+### ¿Qué me conviene: SEO o pauta?
+
+Si necesitas clientes ya, empieza con anuncios (pauta). Si quieres que lleguen solos sin pagar por cada clic, SEO. Si puedes, las dos: los anuncios traen ventas mientras tu posicionamiento en Google crece. En la primera llamada te decimos cuál tiene más sentido para tu negocio.
+
+### ¿En cuánto tiempo veo resultados?
+
+Con anuncios ves señales desde las primeras dos semanas. Aparecer en Google toma más tiempo: recomendamos mínimo 3 meses para ver un crecimiento sostenido.
+
+### ¿Por qué importa aparecer en ChatGPT?
+
+Cada vez más personas le preguntan a ChatGPT, Gemini o Perplexity en vez de buscar en Google. Si tu negocio no está en sus respuestas, esos clientes no te encuentran. Casi nadie está trabajando en eso todavía, y es una ventaja para quien empiece primero. Te explicamos cómo hacerlo en ¿Cómo usar la IA para conseguir clientes?
+
+### ¿Cuánto debo invertir en anuncios?
+
+Te recomendamos un presupuesto mínimo para que tus anuncios funcionen, según tu negocio. Tu mensualidad de Paid Ads cubre nuestro trabajo (diseño, montaje, manejo diario y reportes) y tu inversión en anuncios, y nosotros definimos cómo repartirla para sacarle el mejor resultado. Si quieres invertir más, tú decides.
+
+### ¿Hay permanencia mínima?
+
+No. Es mes a mes y puedes cancelar cuando quieras. Nos quedamos porque funciona, no por un contrato.
+
+### ¿Qué tengo que hacer yo?
+
+Pasarnos tu página web (si no tienes, te ayudamos), contarnos sobre tu negocio en una llamada de 15 minutos y aprobar lo que preparamos. Kubo hace el resto.
+
+## Sobre Kubo
+
+Kubo la fundan dos hermanos, Juan Esteban y Juan David, apasionados por el marketing. Llevan más de 5 años ayudando a empresas a crecer y hoy son un equipo de más de 10 personas. Trabajan con un enfoque simple: decir claro qué hacen, medirlo todo y trabajar mes a mes, sin amarres.
+
+## Artículo destacado: ¿Cómo usar la IA para conseguir clientes?
+
+Cada vez más personas le preguntan a ChatGPT, Claude, Gemini o Perplexity a quién contratar. Para que la IA recomiende un negocio, su sitio web debe: decir claramente qué hace, para quién y dónde; tener una página por servicio; responder las preguntas de los clientes; tener la información en texto y no solo en imágenes; cargar rápido y no bloquear a los robots de las IAs en robots.txt; mostrar pruebas reales (reseñas, casos, dirección, teléfono); y usar datos estructurados (schema). Publicar contenido de forma constante ayuda. Nadie puede garantizar que una IA recomiende un negocio, pero un sitio claro y confiable aumenta mucho las posibilidades.
+
+Lee el artículo completo: https://www.kubolab.io/blog-ia-conseguir-clientes.html
