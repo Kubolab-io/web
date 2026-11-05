@@ -1,0 +1,89 @@
+/* Kubo — extras para los artículos del blog */
+
+.kb-cover img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 24px;
+}
+
+.kb-inline-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.kb-cta {
+  margin-top: 56px;
+  padding: 48px 40px;
+  border-radius: 28px;
+  background: #072032;
+  color: #fff;
+  text-align: center;
+}
+
+.kb-cta .section-title {
+  color: #fff;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.kb-cta p {
+  max-width: 560px;
+  margin: 0 auto 28px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.kb-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #1faa57;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(31, 170, 87, 0.32);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.kb-wa-btn:hover {
+  background: #198f49;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.kb-wa-btn svg {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .kb-cta {
+    padding: 36px 22px;
+    border-radius: 22px;
+  }
+
+  .kb-wa-btn {
+    width: 100%;
+  }
+}
+
+.content-box .feature-content {
+  margin-top: 44px;
+}
+
+.content-box .image-content .section-title {
+  font-size: clamp(26px, 2.6vw, 36px);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
