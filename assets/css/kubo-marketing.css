@@ -758,3 +758,18 @@
   color: #072032;
   transform: translateY(-2px);
 }
+
+.page-marketing .km-price-sub {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #5c6972;
+  margin: 0 0 4px;
+}
+
+.page-marketing .km-price-card.is-featured .km-price-sub {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.page-marketing .km-lever-sub {
+  line-height: 1.5;
+}
