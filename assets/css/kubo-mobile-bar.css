@@ -1,0 +1,78 @@
+/* Barra de acciones fija para iPhone y iPad. Oculta en escritorio. */
+.kubo-mobile-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .kubo-mobile-bar {
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 999;
+    padding: 8px;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 10px 34px rgba(7, 32, 50, 0.22), 0 0 0 1px rgba(7, 32, 50, 0.06);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .kubo-mobile-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    border-radius: 999px;
+    background: #f3f6f9;
+    color: #072032;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0 18px;
+    flex: 1 1 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .kubo-mobile-bar a.is-primary {
+    flex: 1.9 1 0;
+    background: #072032;
+    color: #fff;
+  }
+
+  .kubo-mobile-bar a:active {
+    opacity: 0.8;
+  }
+
+  /* Espacio para que la barra no tape el final de la página */
+  body {
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* El botón de subir queda por encima de la barra */
+  .progress-wrap {
+    bottom: calc(92px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kubo-mobile-bar {
+    left: 10px;
+    right: 10px;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .kubo-mobile-bar a {
+    font-size: 14px;
+    padding: 0 8px;
+    min-width: 0;
+  }
+
+  .kubo-mobile-bar a.is-primary {
+    flex: 2.2 1 0;
+  }
+}
