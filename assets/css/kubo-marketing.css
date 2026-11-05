@@ -48,42 +48,6 @@
   margin-bottom: 18px;
 }
 
-.page-marketing .km-urlbar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  border: 1px solid #ebedef;
-  border-radius: 16px;
-  padding: 8px 8px 8px 16px;
-  box-shadow: 0 10px 30px rgba(7, 32, 50, 0.06);
-  margin-top: 8px;
-  max-width: 420px;
-}
-
-.page-marketing .km-urlbar > span {
-  color: #9ba0a3;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.page-marketing .km-urlbar input {
-  flex: 1;
-  border: 0;
-  outline: none;
-  font-size: 15px;
-  min-width: 0;
-  background: transparent;
-  color: #072032;
-}
-
-.page-marketing .km-urlbar .wc-btn-primary {
-  padding: 14px 18px;
-  border-radius: 12px;
-  font-size: 14px;
-  gap: 0;
-}
-
 .page-marketing .km-pricing {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -218,6 +182,10 @@
 }
 
 .page-marketing .km-cases-area {
+  background: #fff;
+}
+
+.page-marketing .km-pricing-area {
   background: #fafafa;
 }
 
@@ -554,64 +522,6 @@
   background: #fafafa;
 }
 
-.page-marketing .km-compare-wrap {
-  overflow-x: auto;
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.page-marketing .km-compare {
-  width: 100%;
-  min-width: 680px;
-  border-collapse: separate;
-  border-spacing: 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 15px;
-}
-
-.page-marketing .km-compare th,
-.page-marketing .km-compare td {
-  padding: 18px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: left;
-  vertical-align: middle;
-}
-
-.page-marketing .km-compare thead th {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.page-marketing .km-compare tbody th {
-  color: #fff;
-  font-weight: 600;
-  width: 24%;
-}
-
-.page-marketing .km-compare .is-kubo {
-  background: rgba(255, 132, 93, 0.12);
-  color: #fff;
-  font-weight: 600;
-}
-
-.page-marketing .km-compare thead .is-kubo {
-  background: #ff845d;
-  border-radius: 16px 16px 0 0;
-}
-
-.page-marketing .km-compare tbody tr:last-child .is-kubo {
-  border-radius: 0 0 16px 16px;
-}
-
-.page-marketing .km-compare .is-no {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.page-marketing .km-compare .is-yes {
-  color: #ff845d;
-}
-
 .page-marketing .km-faq {
   max-width: 820px;
   margin: 0 auto;
@@ -663,8 +573,7 @@
 }
 
 .page-marketing .km-final,
-.page-marketing .km-results,
-.page-marketing .km-faq-area {
+.page-marketing .km-results {
   padding-top: 0;
 }
 
@@ -702,12 +611,6 @@
   position: relative;
 }
 
-.page-marketing .km-final-box .km-urlbar {
-  margin: 32px auto 0;
-  max-width: 520px;
-  position: relative;
-}
-
 @media only screen and (max-width: 1199px) {
   .page-marketing .hero-thumb {
     width: min(640px, 100%);
@@ -728,6 +631,17 @@
   .page-marketing .hero-thumb {
     width: 100%;
     flex-basis: auto;
+  }
+
+  .page-marketing .hero-thumb.is-photo {
+    width: min(420px, 100%);
+    flex-basis: auto;
+    margin: 0 auto;
+  }
+
+  .page-marketing .km-cta-row .km-wa-btn,
+  .page-marketing .km-cta-row .km-contact-btn {
+    width: 100%;
   }
 
   .page-marketing .km-pricing,
@@ -761,10 +675,6 @@
     padding: 56px 22px;
   }
 
-  .page-marketing .km-urlbar > span {
-    display: none;
-  }
-
   .page-marketing .km-case-chip {
     margin-left: 0;
   }
@@ -772,4 +682,79 @@
   .page-marketing .km-price-card.is-featured {
     transform: none;
   }
+}
+
+/* Foto del hero */
+.page-marketing .hero-thumb.is-photo {
+  width: min(470px, 100%);
+  flex: 0 1 470px;
+  aspect-ratio: auto;
+  margin-left: auto;
+}
+
+.page-marketing .hero-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  filter: drop-shadow(0 24px 60px rgba(7, 32, 50, 0.18));
+}
+
+/* Botones de contacto */
+.page-marketing .km-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.page-marketing .km-cta-row.is-center {
+  justify-content: center;
+  margin-top: 32px;
+  position: relative;
+}
+
+.page-marketing .km-wa-btn,
+.page-marketing .km-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.page-marketing .km-wa-btn {
+  background: #1faa57;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(31, 170, 87, 0.32);
+}
+
+.page-marketing .km-wa-btn:hover {
+  background: #198f49;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.page-marketing .km-wa-icon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+.page-marketing .km-contact-btn {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+
+.page-marketing .km-contact-btn:hover {
+  background: #fff;
+  color: #072032;
+  transform: translateY(-2px);
 }
