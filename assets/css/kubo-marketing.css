@@ -822,6 +822,9 @@
 
 .page-marketing .km-stats span {
   display: block;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 6px;
   font-size: 15px;
   color: #5c6972;
