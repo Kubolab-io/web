@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somos Juan Esteban y Juan David, dos hermanos apasionados por el marketing. Más de cinco años ayudando a empresas colombianas a conseguir más clientes.">
+
+  <title>Sobre nosotros — Kubo</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.png">
+
+
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-online-meeting.css">
+  <link rel="stylesheet" href="assets/css/kubo-marketing.css">
+
+
+  <link rel="stylesheet" href="assets/css/kubo-mobile-bar.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16902494256"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16902494256');
+</script>
+
+<body class="font-heading-geist-semibold page-marketing">
+
+  <!-- Preloader -->
+  <style>#preloader{animation:kubo-preloader-out .4s ease 4s forwards}@keyframes kubo-preloader-out{to{opacity:0;visibility:hidden;pointer-events:none}}</style>
+  <script>
+    (function () {
+      var done = false;
+      function hidePreloader() {
+        if (done) return;
+        done = true;
+        var container = document.getElementById("container");
+        if (container) container.classList.add("loaded");
+        setTimeout(function () {
+          var preloader = document.getElementById("preloader");
+          if (preloader && preloader.parentNode) preloader.parentNode.removeChild(preloader);
+        }, 1000);
+      }
+      document.addEventListener("DOMContentLoaded", hidePreloader);
+      window.addEventListener("pageshow", hidePreloader);
+      setTimeout(hidePreloader, 2500);
+    })();
+  </script>
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="K" class="characters">K</span>
+          <span data-text="U" class="characters">U</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="O" class="characters">O</span>
+          <span data-text="L" class="characters">L</span>
+          <span data-text="A" class="characters">A</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="." class="characters">.</span>
+          <span data-text="I" class="characters">I</span>
+          <span data-text="O" class="characters">O</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Soporte de Idioma</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Diseño</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Ancho Completo</button>
+          <button data-mode="box-layout">Diseño en Caja</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">por defecto</option>
+            <option selected value="2">animado</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-area">
+    <div class="offcanvas-area-meta-wrapper">
+      <span id="close_offcanvas" class="close-offcanvas">
+        <img src="assets/imgs/icon/close.png" alt="close">
+      </span>
+      <div class="offcanvas-btn-wrapper">
+      </div>
+    </div>
+    <div class="offcanvas-area-menu-wrapper">
+      <ul id="accordion" class="accordion">
+        <li><a href="index.html">Marketing</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Buscar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Header area start -->
+  <header class="header-area style-1 pos-abs zi-9">
+    <div class="container">
+      <div class="header-area__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/imgs/logo/logo-2.png" class="normal-logo" alt="Site Logo" width="140" height="50">
+            <img src="assets/imgs/logo/logo-13.png" class="sticky-logo" alt="Site Logo" width="125" height="50">
+          </a>
+        </div>
+        <div class="header__nav pos-center">
+          <nav class="main-menu">
+            <ul>
+              <li><a href="index.html">Marketing</a></li>
+              <li><a href="nosotros.html">Sobre nosotros</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__button">
+          <a href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20hablar%20con%20ustedes" target="_blank" rel="noopener" class="wc-btn wc-btn-primary btn-text-flip"> <span
+            data-text="Hablar con Kubo">Hablar con Kubo</span></a>
+        </div>
+        <div class="header__navicon d-xl-none">
+          <button onclick="showCanvas3()" class="open-offcanvas">
+            <i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-booking">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+
+
+        <main>
+
+          <section class="km-about-hero section-spacing">
+            <div class="container">
+              <div class="km-split">
+                <div class="km-split-copy has_fade_anim">
+                  <p class="km-kicker">Sobre nosotros</p>
+                  <h1 class="section-title">Dos hermanos, una pasión: que tu negocio crezca.</h1>
+                  <p class="km-lead">Somos Juan Esteban y Juan David. Los dos nos apasionamos por el marketing y llevamos más de cinco años ayudando a empresas a conseguir más clientes.</p>
+                  <div class="km-cta-row">
+                    <a href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20ustedes%20y%20hablar%20de%20mi%20negocio" target="_blank" rel="noopener" class="km-wa-btn"><svg class="km-wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Hablemos por WhatsApp</span></a>
+                  </div>
+                </div>
+                <figure class="km-split-media km-about-photo has_fade_anim" data-delay="0.2">
+                  <img src="assets/imgs/gallery/kubo-hermanos.jpg" alt="Juan Esteban y Juan David, los hermanos fundadores de Kubo, con sus chaquetas de la empresa">
+                  <figcaption>Juan Esteban y Juan David, fundadores de Kubo.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="km-about-stats">
+            <div class="container">
+              <div class="km-stats has_fade_anim">
+                <div><strong>+5 años</strong><span>ayudando a empresas a crecer</span></div>
+                <div><strong>2 hermanos</strong><span>un solo equipo, la misma pasión</span></div>
+                <div><strong>6 años</strong><span>trabajando con Westpoint Security</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="km-about-story section-spacing">
+            <div class="container">
+              <div class="km-story has_fade_anim">
+                <p class="km-kicker">Nuestra historia</p>
+                <h2 class="section-title">Empezamos ayudando a negocios que casi nadie encontraba.</h2>
+                <p>Todo empezó con una idea sencilla: ayudar a negocios que hacían muy bien su trabajo, pero que casi nadie encontraba. Nos metimos de lleno al marketing y fuimos aprendiendo, proyecto a proyecto, qué funciona de verdad y qué es puro cuento.</p>
+                <p>En el camino vimos algo que se repetía: muchas empresas pagaban a agencias que cobraban hasta cuatro veces más, entregaban reportes que nadie entendía y traían llamadas que no servían para nada. El marketing se sentía caro, complicado y lleno de palabras raras.</p>
+                <p>Por eso creamos Kubo: para que cualquier empresa pueda tener un equipo de marketing sin tener que armarlo. Hablamos en simple, trabajamos mes a mes y te mostramos con números qué está pasando.</p>
+                <p>Hoy acompañamos a empresas como Westpoint Security, con quien llevamos seis años, y ESSE Legal, que pasó de depender de referidos a escalar su operación. Seguimos haciendo lo mismo que el primer día: trabajar de la mano contigo, como si tu negocio fuera el nuestro.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="km-about-values section-spacing">
+            <div class="container">
+              <div class="km-head">
+                <h2 class="section-title has_fade_anim">Así trabajamos</h2>
+                <p class="km-lead has_fade_anim">Tres promesas que no cambian.</p>
+              </div>
+              <div class="km-steps has_fade_anim">
+                <article class="km-step">
+                  <h3>Hablamos claro</h3>
+                  <p>Sin palabras raras ni letra pequeña. Si algo no se entiende, te lo explicamos hasta que quede claro.</p>
+                </article>
+                <article class="km-step">
+                  <h3>Todo se mide</h3>
+                  <p>Cada mes ves cuánta gente te encontró y qué trajo clientes. Lo que no funciona, lo cambiamos.</p>
+                </article>
+                <article class="km-step">
+                  <h3>Sin amarres</h3>
+                  <p>Trabajamos mes a mes. Te quedas porque funciona, no porque firmaste un contrato.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="km-final section-spacing">
+            <div class="container">
+              <div class="km-final-box has_fade_anim">
+                <h2 class="section-title">Conversemos sobre tu negocio.</h2>
+                <p class="km-lead">Escríbenos y cuéntanos qué quieres lograr. En 24 horas te decimos qué haríamos el primer mes.</p>
+                <div class="km-cta-row is-center">
+                  <a href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20ustedes%20y%20hablar%20de%20mi%20negocio" target="_blank" rel="noopener" class="km-wa-btn"><svg class="km-wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Escríbenos por WhatsApp</span></a>
+                  <a href="mailto:hola@kubolab.io?subject=Quiero%20conocer%20a%20Kubo" class="km-contact-btn">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </main>
+
+        <!-- footer area start  -->
+        <footer class="footer-area style-2">
+          <div class="container">
+            <div class="footer-area-inner">
+              <div class="footer-widget-wrapper">
+                <div class="footer-logo">
+                  <img src="assets/imgs/logo/logo-2.png" alt="site-logo">
+                </div>
+                <div class="description-text">
+                  <div class="text-wrapper">
+                    <p class="text">Marketing para que tus clientes te encuentren en Google, en ChatGPT y en anuncios. Tú apruebas. Kubo ejecuta.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title">Empresa</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="index.html">Marketing</a></li>
+                  <li><a href="nosotros.html">Sobre nosotros</a></li>
+                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="mailto:hola@kubolab.io">hola@kubolab.io</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-widget-wrapper">
+                <h2 class="title">Newsletter</h2>
+                <form action="#" class="subscribe-form">
+                  <div class="input-field">
+                    <input type="email" placeholder="Ingresa tu correo">
+                    <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                  </div>
+                  <div class="policy-field">
+                    <input type="checkbox" id="policy" name="policy" value="Boat">
+                    <label for="policy"> Estoy de acuerdo con la <span>política de privacidad</span></label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="copyright-area-inner">
+              <ul class="social-links">
+                <li><a href="https://www.instagram.com/kubolab.io/"  target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/kub0lab/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+              <div class="copyright-text">
+                <p class="text">© 2022 Kubolab.io</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+  <!-- login form  -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="form-box-wrapper">
+          <div class="login-form-box">
+            <div class="btn-wrapper">
+              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
+                  alt="icon image"></button>
+            </div>
+            <div class="title-wrapper">
+              <h2 class="title"><span>Bienvenido <br>
+                  de vuelta a</span> Kubo </h2>
+            </div>
+            <div class="icon">
+              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
+            </div>
+            <div class="form-wrapper">
+              <form action="#" class="user-form">
+                <div class="input-field">
+                  <input type="email" placeholder="Ingresa tu correo">
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Ingresa tu contraseña">
+                </div>
+                <div class="policy-field">
+                  <input type="checkbox" id="p-policy" name="p-policy" value="Boat">
+                  <label for="policy">Recuérdame</label>
+                  <a href="#" class="forget-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
+                    data-text="Iniciar Sesión">Iniciar Sesión</span></button>
+              </form>
+            </div>
+            <div class="note">
+              <p>¿No tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
+                    data-bs-toggle="modal" data-bs-target="#signupform">¡Créala aquí!</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup form  -->
+  <div class="modal fade" id="signupform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="form-box-wrapper">
+          <div class="register-form-box">
+            <div class="btn-wrapper">
+              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
+                  alt="icon image"></button>
+            </div>
+            <div class="title-wrapper">
+              <h2 class="title"><span>Comienza Tu <br>
+                  Viaje</span> con nosotros.</h2>
+            </div>
+            <div class="icon">
+              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
+            </div>
+            <div class="form-wrapper">
+              <form action="#" class="user-form">
+                <div class="input-field">
+                  <input type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="Nombre de usuario">
+                </div>
+                <div class="input-field">
+                  <input type="email" placeholder="Escribe tu correo">
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Escribe tu contraseña">
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Confirma tu contraseña">
+                </div>
+                <div class="policy-field">
+                  <input type="checkbox" id="d-policy" name="d-policy" value="Boat">
+                  <label for="d-policy">Estoy de acuerdo con los <span><a href="#">Términos de Servicio</a></span> de Kubo.</label>
+                </div>
+                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
+                    data-text="Registrarse">Registrarse</span></button>
+              </form>
+            </div>
+            <div class="note">
+              <p>¿Ya tienes una cuenta? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡Inicia sesión aquí!</a></span></p>
+            </div>
+            <h3 class="alternative-title"><span>O</span></h3>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <script>
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1800,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+        pagination: {
+          el: '.testimonial-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= px
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1201: {
+            slidesPerView: 3,
+          },
+          1367: {
+            slidesPerView: 3,
+          },
+        }
+      });
+    }
+
+
+    const toggle_switcher = function ($scope) {
+      const checked = $("input", $scope);
+      const toggle_pane = $(".toggle-pane", $scope);
+      const toggle_label = $(".before_label, .after_label", $scope);
+
+      checked.change(function () {
+        toggle_pane.toggleClass('show');
+        toggle_label.toggleClass('active');
+      })
+    }
+
+
+    document.querySelectorAll('.km-case-video[data-youtube]').forEach(function (el) {
+      var id = (el.getAttribute('data-youtube') || '').trim();
+      if (!id) return;
+      el.innerHTML = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(id) + '?rel=0" title="Caso de éxito Kubo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    });
+
+    // corporate_brand_slider_active
+    if ('.brand-active') {
+      var brand_slider_active = new Swiper(".brand-active", {
+        slidesPerView: 5,
+        loop: true,
+        autoplay: true,
+        spaceBetween: 60,
+        speed: 3000,
+        autoplay: {
+          delay: .1,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          375: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+          },
+          // when window width is >= 1366px
+          1366: {
+            slidesPerView: 5,
+          },
+        }
+      });
+    }
+  </script>
+
+
+
+  <nav class="kubo-mobile-bar" aria-label="Contacto rápido">
+    <a href="tel:+573142192278">Llamar</a>
+    <a href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="is-primary" href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20solicitar%20una%20propuesta" target="_blank" rel="noopener">Solicitar propuesta</a>
+  </nav>
+</body>
+
+</html>

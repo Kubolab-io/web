@@ -182,10 +182,6 @@
 }
 
 .page-marketing .km-cases-area {
-  background: #fff;
-}
-
-.page-marketing .km-pricing-area {
   background: #fafafa;
 }
 
@@ -518,10 +514,6 @@
   white-space: nowrap;
 }
 
-.page-marketing .km-steps-area {
-  background: #fafafa;
-}
-
 .page-marketing .km-faq {
   max-width: 820px;
   margin: 0 auto;
@@ -573,7 +565,8 @@
 }
 
 .page-marketing .km-final,
-.page-marketing .km-results {
+.page-marketing .km-results,
+.page-marketing .km-faq-area {
   padding-top: 0;
 }
 
@@ -772,4 +765,99 @@
 
 .page-marketing .km-lever-sub {
   line-height: 1.5;
+}
+
+.page-marketing .km-lever-foot strong {
+  text-align: right;
+}
+
+.page-marketing .km-lever-foot strong small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5c6972;
+}
+
+/* Sobre nosotros */
+.page-marketing .km-about-hero {
+  padding-top: 170px;
+}
+
+.page-marketing .km-about-photo {
+  margin: 0;
+}
+
+.page-marketing .km-about-photo img {
+  box-shadow: 0 28px 80px rgba(7, 32, 50, 0.16);
+}
+
+.page-marketing .km-about-photo figcaption {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #5c6972;
+  text-align: center;
+}
+
+.page-marketing .km-about-stats {
+  padding-bottom: 20px;
+}
+
+.page-marketing .km-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  border-top: 1px solid #ebedef;
+  border-bottom: 1px solid #ebedef;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.page-marketing .km-stats strong {
+  display: block;
+  font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.1;
+  color: #072032;
+}
+
+.page-marketing .km-stats span {
+  display: block;
+  margin-top: 6px;
+  font-size: 15px;
+  color: #5c6972;
+}
+
+.page-marketing .km-about-story {
+  background: #fafafa;
+  margin-top: 40px;
+}
+
+.page-marketing .km-story {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.page-marketing .km-story .section-title {
+  font-size: clamp(30px, 3.2vw, 46px);
+  line-height: 1.12;
+  color: #072032;
+  margin-bottom: 24px;
+}
+
+.page-marketing .km-story p:not(.km-kicker) {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3d4a54;
+  margin: 0 0 18px;
+}
+
+@media only screen and (max-width: 991px) {
+  .page-marketing .km-about-hero {
+    padding-top: 130px;
+  }
+
+  .page-marketing .km-stats {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
 }
