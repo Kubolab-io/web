@@ -31,6 +31,25 @@
 <body class="font-heading-colasta-bold">
 
   <!-- Preloader -->
+  <style>#preloader{animation:kubo-preloader-out .4s ease 4s forwards}@keyframes kubo-preloader-out{to{opacity:0;visibility:hidden;pointer-events:none}}</style>
+  <script>
+    (function () {
+      var done = false;
+      function hidePreloader() {
+        if (done) return;
+        done = true;
+        var container = document.getElementById("container");
+        if (container) container.classList.add("loaded");
+        setTimeout(function () {
+          var preloader = document.getElementById("preloader");
+          if (preloader && preloader.parentNode) preloader.parentNode.removeChild(preloader);
+        }, 1000);
+      }
+      document.addEventListener("DOMContentLoaded", hidePreloader);
+      window.addEventListener("pageshow", hidePreloader);
+      setTimeout(hidePreloader, 2500);
+    })();
+  </script>
   <div id="preloader">
     <div id="container" class="container-preloader">
       <div class="animation-preloader">
