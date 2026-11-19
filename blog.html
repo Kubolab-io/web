@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -136,25 +136,25 @@
           "@type": "ListItem",
           "position": 1,
           "url": "https://www.kubolab.io/blog-ia-conseguir-clientes.html",
-          "name": "¿Cómo usar la IA para conseguir clientes?"
+          "name": "How to get found when people ask an AI who to hire"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "url": "https://www.kubolab.io/blog-latam-remote-work.html",
-          "name": "Cómo el talento de LATAM está transformando el trabajo remoto para empresas de EE. UU."
+          "name": "How Latin American talent is changing remote work for US companies"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "url": "https://www.kubolab.io/blog-details.html",
-          "name": "¿Cuánto puedes ahorrar contratando talento en LATAM frente a Estados Unidos?"
+          "name": "How much you save hiring in Latin America instead of the US"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "url": "https://www.kubolab.io/blog2-details.html",
-          "name": "Freelancers, nearshoring o empleados de tiempo completo en LATAM: ¿cuál te conviene?"
+          "name": "Freelancers, nearshoring, or full-time hires in Latin America"
         }
       ]
     },
@@ -184,135 +184,6 @@
 
 <body class="font-heading-colasta-bold">
 
-  <!-- Preloader -->
-  <style>#preloader{animation:kubo-preloader-out .4s ease 4s forwards}@keyframes kubo-preloader-out{to{opacity:0;visibility:hidden;pointer-events:none}}</style>
-  <script>
-    (function () {
-      var done = false;
-      function hidePreloader() {
-        if (done) return;
-        done = true;
-        var container = document.getElementById("container");
-        if (container) container.classList.add("loaded");
-        setTimeout(function () {
-          var preloader = document.getElementById("preloader");
-          if (preloader && preloader.parentNode) preloader.parentNode.removeChild(preloader);
-        }, 1000);
-      }
-      document.addEventListener("DOMContentLoaded", hidePreloader);
-      window.addEventListener("pageshow", hidePreloader);
-      setTimeout(hidePreloader, 2500);
-    })();
-  </script>
-  <div id="preloader">
-    <div id="container" class="container-preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text="K" class="characters">K</span>
-          <span data-text="U" class="characters">U</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="O" class="characters">O</span>
-          <span data-text="L" class="characters">L</span>
-          <span data-text="A" class="characters">A</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="." class="characters">.</span>
-          <span data-text="I" class="characters">I</span>
-          <span data-text="O" class="characters">O</span>
-        </div>
-      </div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-  </div>
-
-
-
-  <!-- Cursor Animation -->
-  <div class="cursor1"></div>
-
-  <!-- Sroll to top -->
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-    </svg>
-  </div>
-
-  <!-- Switcher Area Start -->
-  <div class="switcher__area">
-    <div class="switcher__icon">
-      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="switcher__items">
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Language Support</p>
-        </div>
-        <div class="switcher__btn lang_dir wc-col-2">
-          <button class="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Layout</p>
-        </div>
-        <div class="switcher__btn layout-type wc-col-2">
-          <button class="active" data-mode="full-width">Full Width</button>
-          <button data-mode="box-layout">Box Layout</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Cursor</p>
-        </div>
-        <div class="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">default</option>
-            <option selected value="2">animated</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Switcher Area End -->
-<!-- offcanvas start  -->
-<div class="offcanvas-area">
-  <div class="offcanvas-area-meta-wrapper">
-    <span id="close_offcanvas" class="close-offcanvas">
-      <img src="assets/imgs/icon/close.png" alt="close">
-    </span>
-    <div class="offcanvas-btn-wrapper">
-    </div>
-  </div>
-  <div class="offcanvas-area-menu-wrapper">
-    <ul id="accordion" class="accordion">
-        <li><a href="index.html">Marketing</a></li>
-        <li><a href="nosotros.html">Sobre nosotros</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-    </ul>
-  </div>
-</div>
-<!-- offcanvas end  -->
-
-  <!-- search modal start -->
-  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="search-template" aria-hidden="true">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form action="#" class="form-search">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- search modal end -->
-
   <!-- Header area start -->
   <header class="header-area style-1 pos-abs zi-9">
     <div class="container">
@@ -325,14 +196,14 @@
         <div class="header__nav pos-center">
           <nav class="main-menu">
             <ul>
-              <li><a href="index.html">Marketing</a></li>
-              <li><a href="nosotros.html">Sobre nosotros</a></li>
-              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="nosotros.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </nav>
         </div>
         <div class="header__button">
-          <a href="https://wa.me/573142192278?text=Hola%20Kubo%2C%20quiero%20hablar%20con%20ustedes" target="_blank" rel="noopener" class="wc-btn wc-btn-primary btn-text-flip"> <span data-text="Hablar con Kubo">Hablar con Kubo</span></a>
+          <a href="https://app.kubolab.io/auth/signup?role=company" target="_blank" rel="noopener" class="wc-btn wc-btn-primary btn-text-flip"> <span data-text="Start hiring">Start hiring</span></a>
         </div>
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
@@ -344,7 +215,7 @@
   <!-- Header area end -->
 
 
-  <div class="has-smooth" id="has_smooth"></div>
+  <div id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <div class="body-wrapper body-booking">
@@ -361,15 +232,15 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h1 class="section-title large has_fade_anim">Últimos artículos
-                        y consejos</h1>
+                      <h1 class="section-title large has_fade_anim">Latest
+                        articles</h1>
                     </div>
                   </div>
                   <div class="shape">
                     <img src="assets/imgs/shape/shape-s-56.webp" class="has_fade_anim" data-delay="0.30" alt="shape image">
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim" data-delay="0.45">Ideas simples para que más clientes te encuentren y tu negocio crezca.</p>
+                    <p class="text has_fade_anim" data-delay="0.45">Notes on hiring remote talent in Colombia, and what Kubo handles after you say yes.</p>
                   </div>
                 </div>
               </div>
@@ -385,68 +256,68 @@
                   <div class="blog-wrapper">
                     <article class="blog has_fade_anim">
                       <div class="thumb">
-                        <a href="blog-ia-conseguir-clientes.html"><img loading="lazy" decoding="async" width="1024" height="768" src="assets/imgs/gallery/kubo-hermanos.jpg" alt="¿Cómo usar la IA para conseguir clientes?"></a>
+                        <a href="blog-ia-conseguir-clientes.html"><img loading="lazy" decoding="async" width="1024" height="768" src="assets/imgs/gallery/kubo-hermanos.jpg" alt="How to get found when people ask an AI who to hire"></a>
                       </div>
                       <div class="content">
                         <div class="meta">
-                          <span class="date">4 de noviembre de 2026</span>
+                          <span class="date">November 4, 2026</span>
                         </div>
-                        <h3 class="title"><a href="blog-ia-conseguir-clientes.html">¿Cómo usar la IA para conseguir clientes?</a>
+                        <h3 class="title"><a href="blog-ia-conseguir-clientes.html">How to get found when people ask an AI who to hire</a>
                         </h3>
                         <div class="btn-wrapper">
                           <a href="blog-ia-conseguir-clientes.html" class="wc-btn wc-btn-underline btn-text-flip"> <span
-                              data-text="Leer más">Leer más</span></a>
+                              data-text="Read">Read</span></a>
                         </div>
                       </div>
                     </article>
 
                     <article class="blog has_fade_anim" data-delay="0.15">
                       <div class="thumb">
-                        <a href="blog-latam-remote-work.html"><img src="assets/imgs/blog/remote.png" alt="Cómo el talento de LATAM está transformando el trabajo remoto para empresas de EE. UU."></a>
+                        <a href="blog-latam-remote-work.html"><img src="assets/imgs/blog/remote.png" alt="How Latin American talent is changing remote work for US companies"></a>
                       </div>
                       <div class="content">
                         <div class="meta">
-                          <span class="date">17 de marzo de 2025</span>
+                          <span class="date">March 17, 2025</span>
                         </div>
-                        <h3 class="title"><a href="blog-latam-remote-work.html">Cómo el talento de LATAM está transformando el trabajo remoto para empresas de EE. UU.</a>
+                        <h3 class="title"><a href="blog-latam-remote-work.html">How Latin American talent is changing remote work for US companies</a>
                         </h3>
                         <div class="btn-wrapper">
                           <a href="blog-latam-remote-work.html" class="wc-btn wc-btn-underline btn-text-flip"> <span
-                              data-text="Leer más">Leer más</span></a>
+                              data-text="Read">Read</span></a>
                         </div>
                       </div>
                     </article>
 
                     <article class="blog has_fade_anim" data-delay="0.30">
                       <div class="thumb">
-                        <a href="blog-details.html"><img src="assets/imgs/blog/img-s-2.png" alt="¿Cuánto puedes ahorrar contratando talento en LATAM frente a Estados Unidos?"></a>
+                        <a href="blog-details.html"><img src="assets/imgs/blog/img-s-2.png" alt="How much you save hiring in Latin America instead of the US"></a>
                       </div>
                       <div class="content">
                         <div class="meta">
-                          <span class="date">29 de enero de 2025</span>
+                          <span class="date">January 29, 2025</span>
                         </div>
-                        <h3 class="title"><a href="blog-details.html">¿Cuánto puedes ahorrar contratando talento en LATAM frente a Estados Unidos?</a>
+                        <h3 class="title"><a href="blog-details.html">How much you save hiring in Latin America instead of the US</a>
                         </h3>
                         <div class="btn-wrapper">
                           <a href="blog-details.html" class="wc-btn wc-btn-underline btn-text-flip"> <span
-                              data-text="Leer más">Leer más</span></a>
+                              data-text="Read">Read</span></a>
                         </div>
                       </div>
                     </article>
 
                     <article class="blog has_fade_anim" data-delay="0.45">
                       <div class="thumb">
-                        <a href="blog2-details.html"><img src="assets/imgs/blog/img-s-3.png" alt="Freelancers, nearshoring o empleados de tiempo completo en LATAM: ¿cuál te conviene?"></a>
+                        <a href="blog2-details.html"><img src="assets/imgs/blog/img-s-3.png" alt="Freelancers, nearshoring, or full-time hires in Latin America"></a>
                       </div>
                       <div class="content">
                         <div class="meta">
-                          <span class="date">14 de diciembre de 2024</span>
+                          <span class="date">December 14, 2024</span>
                         </div>
-                        <h3 class="title"><a href="blog2-details.html">Freelancers, nearshoring o empleados de tiempo completo en LATAM: ¿cuál te conviene?</a>
+                        <h3 class="title"><a href="blog2-details.html">Freelancers, nearshoring, or full-time hires in Latin America</a>
                         </h3>
                         <div class="btn-wrapper">
                           <a href="blog2-details.html" class="wc-btn wc-btn-underline btn-text-flip"> <span
-                              data-text="Leer más">Leer más</span></a>
+                              data-text="Read">Read</span></a>
                         </div>
                       </div>
                     </article>
@@ -476,16 +347,16 @@
                 </div>
                 <div class="description-text">
                   <div class="text-wrapper">
-                    <p class="text">Marketing para que tus clientes te encuentren en Google, en ChatGPT y en anuncios. Tú apruebas. Kubo ejecuta.</p>
+                    <p class="text">Colombian talent for remote roles. You meet them and agree on a salary. Kubo handles employment in Colombia.</p>
                   </div>
                 </div>
               </div>
               <div class="footer-widget-wrapper">
-                <h2 class="title">Empresa</h2>
+                <h2 class="title">Company</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="index.html">Marketing</a></li>
-                  <li><a href="nosotros.html">Sobre nosotros</a></li>
-                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="nosotros.html">About</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="mailto:hola@kubolab.io">hola@kubolab.io</a></li>
                 </ul>
               </div>
@@ -614,10 +485,6 @@
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/counter.js"></script>
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollSmoother.min.js"></script>
-  <script src="assets/js/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
   <script src="assets/js/jquery.meanmenu.min.js"></script>
   <script src="assets/js/backToTop.js"></script>
   <script src="assets/js/main.js"></script>
