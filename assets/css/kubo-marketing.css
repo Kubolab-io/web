@@ -570,26 +570,21 @@
 }
 
 .page-marketing .km-final {
-  padding-top: 72px;
-  padding-bottom: 88px;
+  padding-top: 88px;
+  padding-bottom: 96px;
   background: #fff;
 }
 
 .page-marketing .km-final-box {
-  background: #072032;
-  border-radius: 32px;
-  padding: 80px 32px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
-}
-
-.page-marketing .km-final-box::before {
-  content: none;
 }
 
 .page-marketing .km-final-box .section-title {
-  color: #fff;
+  color: #072032;
   font-size: clamp(32px, 3.6vw, 56px);
   line-height: 1.1;
   max-width: 760px;
@@ -598,7 +593,7 @@
 }
 
 .page-marketing .km-final-box .km-lead {
-  color: rgba(255, 255, 255, 0.72);
+  color: #5c6972;
   position: relative;
   max-width: 640px;
   margin-left: auto;
@@ -608,7 +603,12 @@
 .page-marketing .km-final-box .km-contact-btn {
   background: #fff;
   color: #072032;
-  border-color: #fff;
+  border: 1.5px solid #072032;
+}
+
+.page-marketing .km-final-box .km-contact-btn:hover {
+  background: #072032;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -672,7 +672,7 @@
   }
 
   .page-marketing .km-final-box {
-    padding: 56px 22px;
+    padding: 0 8px;
   }
 
   .page-marketing .km-case-chip {
