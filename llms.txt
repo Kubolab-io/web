@@ -1,28 +1,23 @@
 # Kubo
 
-> Kubo conecta talento colombiano con empresas de USA para trabajo remoto. Las empresas exploran perfiles, hacen entrevistas y contratan a través de Kubo; nosotros manejamos el proceso legal en Colombia (contrato, salud/EPS, ARL, pensión, caja y nómina).
+> Kubo connects US companies with Colombian professionals for remote work. Companies browse profiles, interview, and hire through Kubo. Kubo employs the person in Colombia: contract, health insurance, workers’ compensation, retirement contributions, and payroll.
 
-## Producto
+## Product
 
 - App: https://app.kubolab.io/
-- Para empresas: registrarse, ver candidatos aprobados, entrevistar y enviar ofertas.
-- Para talento: subir CV, rango salarial e inglés; recibir entrevistas y ofertas.
-- El contacto personal del candidato no se comparte; todo pasa por Kubo.
+- Companies: register, review approved candidates, interview, and send offers.
+- Talent: upload a CV, salary range, and English level; receive interviews and offers.
+- Candidate contact details stay private. Conversation happens inside Kubo.
 
-## Páginas principales
+## Pages
 
-- [Inicio: Kubo Talent](https://www.kubolab.io/)
-- [Sobre nosotros](https://www.kubolab.io/nosotros.html)
+- [Home](https://www.kubolab.io/)
+- [About](https://www.kubolab.io/nosotros.html)
 - [Blog](https://www.kubolab.io/blog.html)
 - [App](https://app.kubolab.io/)
 
-## Contacto
+## Contact
 
 - Email: hola@kubolab.io
 - LinkedIn: https://www.linkedin.com/company/kub0lab/
 - Instagram: https://www.instagram.com/kubolab.io/
-- Sitio: https://www.kubolab.io/
-
-## Más detalle
-
-- [Versión extendida para IAs](https://www.kubolab.io/llms-full.txt)
