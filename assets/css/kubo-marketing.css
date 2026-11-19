@@ -564,10 +564,15 @@
   margin: 0 0 22px;
 }
 
-.page-marketing .km-final,
 .page-marketing .km-results,
 .page-marketing .km-faq-area {
   padding-top: 0;
+}
+
+.page-marketing .km-final {
+  padding-top: 72px;
+  padding-bottom: 88px;
+  background: #fff;
 }
 
 .page-marketing .km-final-box {
@@ -580,14 +585,7 @@
 }
 
 .page-marketing .km-final-box::before {
-  content: "";
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 132, 93, 0.35), transparent 70%);
-  top: -260px;
-  right: -120px;
+  content: none;
 }
 
 .page-marketing .km-final-box .section-title {
@@ -602,6 +600,15 @@
 .page-marketing .km-final-box .km-lead {
   color: rgba(255, 255, 255, 0.72);
   position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-marketing .km-final-box .km-contact-btn {
+  background: #fff;
+  color: #072032;
+  border-color: #fff;
 }
 
 @media only screen and (max-width: 1199px) {
