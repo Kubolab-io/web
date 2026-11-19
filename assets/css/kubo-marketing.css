@@ -734,6 +734,36 @@
   transform: translateY(-2px);
 }
 
+.page-marketing .km-app-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background: #fff;
+  color: #072032;
+  border: 1.5px solid #d5dee6;
+}
+
+.page-marketing .km-app-btn:hover {
+  border-color: #072032;
+  color: #072032;
+}
+
+.page-marketing .km-lever-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 991px) {
+  .page-marketing .km-lever-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .page-marketing .km-wa-icon {
   width: 24px;
   height: 24px;
